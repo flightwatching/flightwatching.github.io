@@ -27,16 +27,29 @@ title: "Flightwatching"
 </div>
 
 <div class="container">
-  <div class="row-fluid">
-    {% for f in site.posts %}
-      {% if f.categories contains 'featured' %}
-    <div class="span4">
-      <img  class="img-rounded" src="{{f.image}}">
-      <p>{{f.content}}</p>
-    </div>
-      {% endif %}
+<div class="row-fluid">
+  <ul class="thumbnails">
+  {% for f in site.posts %}
+    {% if f.categories contains 'featured' %}
+    <li class="span4">
+      <div class="thumbnail">
+        <img  src="{{f.image}}">
+        <div class="caption">
+          <h3>{{f.title}}</h3>
+          <p>{{f.content}}</p>
+          <p><a href="#" class="btn btn-primary">Learn more</a></p>
+        </div>
+      </div>
+    </li>
+    {% endif %}
   {% endfor %}
+  </ul>
 </div>
+</div>
+
+
+
+
 {% for post in site.posts %}
   {% if post.categories contains 'blog' %}
   <div class="post">
