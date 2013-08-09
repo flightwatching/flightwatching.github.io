@@ -2,14 +2,43 @@
 layout: layout
 title: "Flightwatching"
 ---
-<div class="hero-unit">
-  <h1>FlightWatching</h1>
-  <p>hunting down flight delays<p>
+
+
+<div id="myCarousel" class="carousel slide">
+  <!-- Carousel items -->
+  <div class="carousel-inner">
+{% for post in site.posts %}
+    {% if post.categories contains 'carousel' %}
+    <div class="{{post.class}} item">
+      <div class="text-center">
+        <img src="{{post.image}}" width="100%" alt="" />
+      </div>
+      <div class="carousel-caption">
+        <h4>{{post.title}}</h4>
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+    {% endif %}
+{% endfor %}
+    </div>
+  <!-- Carousel nav -->
+  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
 </div>
+
 <div class="container">
   <div class="row-fluid">
     <div class="span4">One</div>
     <div class="span4">Two</div>
     <div class="span4">Three</div>
   </div>
+    {% for post in site.posts %}
+      {% if post.categories contains 'blog' %}
+      <div class="post">
+          <h1>{{ post.title }}</h1>
+          <span>{{ post.date || date: "%B %e, %Y" }}</span>
+          <small>{{post.subtitle}}</small>
+      </div>
+      {% endif %}
+  {% endfor %}
 </div>
