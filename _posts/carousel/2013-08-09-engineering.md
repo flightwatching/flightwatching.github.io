@@ -1,7 +1,7 @@
 ---
 title: Products for your Engineering
 categories: carousel
-image: img/carousel/sharkletCarousel.jpg
+image: img/960x250/B787carousel.jpg
 class: active
 ---
 
