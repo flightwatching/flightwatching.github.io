@@ -2,15 +2,28 @@
 layout: layout
 title: "Flightwatching news"
 ---
+	<div class="hero-unit">
+		<div class="row-fluid">
+			<div class="span2">
+				<img class="img-rounded hidden-phone" src="{{site.baseurl }}img/300x300/vhf-panel.jpg">
+			</div>
+			<div class="span10">
+				<H2><img src="{{site.baseurl }}img/icons/speech-bubble.png"> 
+					Flightwatching news
+				</H2>
+				<p>Insights from Flightwatching team into our products, technology, and the story or our company</p>
+			</div>
+		</div>
+	</div>
 <div class="container">
   {% for f in site.posts %}
     {% if f.categories contains 'news' %}
     <div class="page-header">	
 		<div class="row-fluid">
-		    <div class="span2">
+		    <div class="span1">
 			    <img src="{{site.baseurl }}img/icons/newspaper.png">
 			</div>
-			<div class="span10">
+			<div class="span11">
 				<h3>{{f.title}}<br>
 					<small>{{f.date | date: "%B %d, %Y" }}</small>
 				</h3>
