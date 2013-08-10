@@ -1,7 +1,7 @@
 ---
 title: FlightWatching becomes member of Aerospace Valley
 categories: news
-image: img/posts/Aerospace-Valley.jpg
+image: img/customers/Aerospace-Valley.jpg
 ---
 Aerospace Valley administration commitee validated FlightWatching as a full time member, joining the Maintenance Cluster of the association.
 
