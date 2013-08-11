@@ -1,8 +1,7 @@
 ---
-title: Products for your Engineering
+title: Proactive maintenance
 categories: carousel
-image: img/960x250/B787carousel.jpg
+image: img/1200x500/B787.jpg
 class: active
 ---
-
-All the real-time data is stored in big-data tables and are one-click available for analysis. You can also automatize the analysis and generate automatic reports!
+FlightWatching is developing highly customizable solutions for remote diagnosis and performance analysis of systems that are used by engineers, technicians or mechanics. 
