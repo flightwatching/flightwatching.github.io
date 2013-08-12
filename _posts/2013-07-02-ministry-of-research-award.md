@@ -1,4 +1,5 @@
 ---
+layout: post
 title: FlightWatching awarded by the French Minister of Research
 categories: news
 image: img/posts/CETI_2013.jpg

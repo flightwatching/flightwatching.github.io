@@ -2,7 +2,7 @@
 title: First users in the airfreight industry
 categories: news
 image: img/posts/beluga.png
-caption: <a href="http://www.airbus.com/aircraftfamilies/freighter/beluga/">© airbus.com</a>
+caption: <a href="http://www.airbus.com/aircraftfamilies/freighter/beluga/">A300-600 beluga - airbus.com</a>
 ---
 FlightWatching Real Time alerts and synoptics are being used by a major aircraft transport industry. Each time one of their aircraft takes offs, an automatic email is sent to the MCC and Engineering so that they can monitor the conditions of the aircraft after take off through one of ous customized dashboards adapted to their needs.
 

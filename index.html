@@ -3,7 +3,24 @@ layout: layout
 title: "Flightwatching"
 ---
 
+{% raw %}
+<script id="scoopit-template" type="text/x-handlebars-template">
+  {{#each items}}
 
+    <div class="row-fluid">
+      <div class="span1">
+        <img src="{{site.baseurl }}img/icons/newspaper.png"> 
+      </div>
+      <div class="span11">
+        <a href="{{link}}"> <small>{{title}}</small></a>
+      </div>
+    </div>
+    <div class="row-fluid">
+    {{{description}}}
+    </div>
+  {{/each}}
+</script>
+{% endraw %}
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
@@ -43,6 +60,14 @@ title: "Flightwatching"
     </li>
     {% endif %}
   {% endfor %}
+    <li class="span4">
+      <div class="thumbnail">
+        <img  src="{{site.url}}img/icons/news.png">
+        <div class="caption" id="scoopit-news">
+          <span class="label">Press review</span>
+        </div>
+      </div>
+    </li>
   </ul>
 </div>
 </div>
@@ -60,3 +85,16 @@ title: "Flightwatching"
   {% endif %}
 {% endfor %}
 </div>
+
+<script type="text/javascript">
+  $( document ).ready(function() {
+    scoopitRss(function(data) {
+        var source = $("#scoopit-template").html();
+        var template = Handlebars.compile(source);
+        var html = template(data);
+        var cleanHtml = html.replace(/, via/g, "");
+        $("#scoopit-news").append(cleanHtml);
+        $("[rel='nofollow']").hide();
+    });
+  });
+</script>
