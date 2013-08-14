@@ -16,6 +16,16 @@ title: "Partners & Customers"
 		</div>
 	</div>
 <div class="container">
+	  {% for f in site.posts %}
+    {% if f.categories contains 'testimonial' %}
+      <div class="row-fluid">
+        <blockquote>
+          {{f.content}}
+          <small>{{f.author}}</small>
+        </blockquote>
+      </div>
+    {% endif %}
+  {% endfor %}
 	<div class="row-fluid">
   {% for f in site.posts %}
     {% if f.categories contains 'customer' %}
