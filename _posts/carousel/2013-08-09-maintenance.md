@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot your systems while flying
+title: Bring the data to the mechanics
 categories: carousel
 image: img/1200x500/sharklet.jpg
 class: 
