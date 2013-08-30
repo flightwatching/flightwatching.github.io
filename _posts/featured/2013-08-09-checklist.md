@@ -1,8 +1,9 @@
 ---
-title: i-logbook
+title: WILCO mobile app
 categories: featured
 image: img/featured/checklist-3D-mockup.jpg
 ---
-Share real time data between mechanics, technicians and engineers with our mobile application.
 
-The checklist is available for IPhones, IPads anb android devices
+Use our mobile application as a multi-user and collaborative device to drive coordination between line maintenance and maintenance control center.
+
+The checklist is available for IPhones, IPads and android devices

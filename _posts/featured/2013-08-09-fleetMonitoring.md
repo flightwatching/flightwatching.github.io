@@ -1,5 +1,5 @@
 ---
-title: Fleet monitoring
+title: WILCO desktop app
 categories: featured
 image: img/featured/product--box-design-fleet-monitoring.png
 ---

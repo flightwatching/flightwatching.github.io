@@ -1,5 +1,5 @@
 ---
 categories: testimonial
-author: Etude des Technologies 2015. Ministère chargé de l’Industrie 
+author: Airfreight user 
 ---
-The knowledge of the behaviour of the systems in real-time or quasi real-time is going more and more important. This need assigns safety active devices, embedded or collaborative; the traffic management systems; tele-maintenance or continuous monitoring enabling predictive or curative maintenance.
+"Its really amazing what we can do with the data sent by the aircraft, even on our A300- 600s. It definetly helps us in anticipating on potential AOG situations"
