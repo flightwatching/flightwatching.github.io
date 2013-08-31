@@ -2,6 +2,6 @@
 title: Reduce the number of technical delays by at least 10%
 categories: carousel
 image: img/1200x500/sharklet.jpg
-class: 
+class: active
 ---
 Troubleshoot your systems during flight
