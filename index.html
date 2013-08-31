@@ -3,24 +3,6 @@ layout: layout
 title: "Flightwatching"
 ---
 
-{% raw %}
-<script id="scoopit-template" type="text/x-handlebars-template">
-  {{#each items}}
-
-    <div class="row-fluid">
-      <div class="span1">
-        <img src="{{site.baseurl }}img/icons/newspaper.png"> 
-      </div>
-      <div class="span11">
-        <a href="{{link}}"> <small>{{title}}</small></a>
-      </div>
-    </div>
-    <div class="row-fluid">
-    {{{description}}}
-    </div>
-  {{/each}}
-</script>
-{% endraw %}
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
@@ -61,10 +43,20 @@ title: "Flightwatching"
     </li>
     {% endif %}
   {% endfor %}
-    <li class="span4" style="background-color: lightgrey;">
+    <li class="span4">
       <div class="thumbnail">
-        <div class="caption" id="scoopit-news">
-          <span class="label">Press review</span>
+        <img  src="{{site.baseurl }}img/icons/event.png">
+        <div class="caption" id="events">
+          <h3>Events to come</h3>
+          {% for f in site.posts %}
+            {% if f.categories contains 'event' %}
+            
+            <span class="badge {% if f.date > site.time %}badge-important{% endif %}">
+              {{f.date | date: "%b %d" }}
+            </span>
+            <small>{{f.content}}</small>
+            {% endif %}
+          {% endfor %}
         </div>
       </div>
     </li>
@@ -73,28 +65,3 @@ title: "Flightwatching"
 </div>
 
 
-
-
-{% for post in site.posts %}
-  {% if post.categories contains 'blog' %}
-  <div class="post">
-      <h1>{{ post.title }}</h1>
-      <span>{{ post.date || date: "%B %e, %Y" }}</span>
-      <small>{{post.subtitle}}</small>
-  </div>
-  {% endif %}
-{% endfor %}
-</div>
-
-<script type="text/javascript">
-  $( document ).ready(function() {
-    scoopitRss(function(data) {
-        var source = $("#scoopit-template").html();
-        var template = Handlebars.compile(source);
-        var html = template(data);
-        var cleanHtml = html.replace(/, via/g, "");
-        $("#scoopit-news").append(cleanHtml);
-        $("[rel='nofollow']").hide();
-    });
-  });
-</script>
