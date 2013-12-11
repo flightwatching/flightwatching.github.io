@@ -6,6 +6,9 @@ title: "Flightwatching"
 <div id="myCarousel" class="carousel slide">
   <!-- Carousel items -->
   <div class="carousel-inner">
+    <div class="active item">
+    <iframe src="//player.vimeo.com/video/81181346?title=0&amp;byline=0&amp;portrait=0&amp;color=ffffff" width="100%" height="500px" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
 {% for post in site.posts %}
     {% if post.categories contains 'carousel' %}
     <div class="{{post.class}} item">
@@ -26,7 +29,6 @@ title: "Flightwatching"
 </div>
 
 <div class="container">
-
 <div class="row-fluid">
   <ul class="thumbnails">
   {% for f in site.posts %}
