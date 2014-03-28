@@ -11,4 +11,4 @@ OSX comes with ruby which is not the rvm one. You have to override it.
 then install jekyll: ```sudo gem install jekyll```
 and rdiscount (to compile markdown syntax): ```gem install rdiscount```
 
-go to your website root and run ``` jekyll serve ``` 
+go to your website root and run ``` jekyll serve --watch ``` 
