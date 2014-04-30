@@ -32,7 +32,7 @@ title: "Flightwatching news"
 				<H2><img src="{{site.baseurl }}img/icons/speech-bubble.png"> 
 					Flightwatching news
 				</H2>
-				<p>Insights from Flightwatching team into our products, technology, and the story of our company</p>
+				<p>Insights from Flightwatching team into technology</p>
 			</div>
 		</div>
 	</div>
@@ -40,35 +40,7 @@ title: "Flightwatching news"
 
 <div class="container">
 	<div class="row-fluid">
-		<div class="span8">
-{% for f in site.posts %}
-    {% if f.categories contains 'news' %}
-    <div class="page-header">	
-		<div class="row-fluid">
-		    <div class="span1">
-			    <img src="{{site.baseurl }}img/icons/newspaper.png">
-			</div>
-			<div class="span11">
-				<h3><a href="{{f.url}}">{{f.title}}</a><br>
-					<small>{{f.date | date: "%B %d, %Y" }}</small>
-				</h3>
-			</div>
-		</div>
-	</div>
-		<div class="row-fluid">
-		    <div class="span3 offset1">
-			    <img class="img-polaroid" src="{{ site.baseurl }}{{f.image}}">
-			    <small class="muted">{{f.caption}}</small>
-			</div>
-			<div class="span7">
-				<p>{{f.content}}</p>
-			</div>
-		</div>
-    {% endif %}
-  {% endfor %}
-		</div>
-
-		<div class="span4 well">
+		<div class="span12 well">
         <div id="scoopit-news">
           <span class="label">Press review</span>
         </div>
