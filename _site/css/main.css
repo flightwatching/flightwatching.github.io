@@ -41,3 +41,15 @@
 
     font: 32px Arial, sans-serif
 }
+
+.scoopit-item{
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+
+.scoopit-item-description > img {
+    margin:30px;
+}

@@ -7,16 +7,18 @@ title: "Flightwatching news"
 <script id="scoopit-template" type="text/x-handlebars-template">
   {{#each items}}
 
-    <div class="row-fluid">
-      <div class="span1">
-        <img src="/img/icons/newspaper.png"> 
+    <div class='scoopit-item'>
+      <div class="row-fluid ">
+        <div class="span1">
+          <img src="/img/icons/newspaper.png"> 
+        </div>
+        <div class="span11">
+          <h2>{{title}} <a class='btn btn-success' href="{{source.url}}">MORE</a></h2>
+        </div>
       </div>
-      <div class="span11">
-        <h2>{{title}} <a class='btn btn-success' href="{{source.url}}">MORE</a></h2>
+      <div class="row-fluid scoopit-item-description">
+        {{{description}}}
       </div>
-    </div>
-    <div class="row-fluid">
-    {{{description}}}
     </div>
   {{/each}}
 </script>
@@ -41,10 +43,9 @@ title: "Flightwatching news"
 
 <div class="container">
 	<div class="row-fluid">
-		<div class="span12 ">
+		<div class="span12 well">
         <div id="scoopit-news">
         </div>
-
 		</div>
 	</div>
 </div>
@@ -52,12 +53,19 @@ title: "Flightwatching news"
 <script type="text/javascript">
   $( document ).ready(function() {
     scoopitRss(function(data) {
-        var source = $("#scoopit-template").html();
-        var template = Handlebars.compile(source);
-        var html = template(data);
-        var cleanHtml = html.replace(/, via/g, "");
-        $("#scoopit-news").append(cleanHtml);
-        $("[rel='nofollow']").hide();
+      var items = data.items;
+      for (var i = 0; i < items.length; i++) {
+        var item = items[i];
+        var lastIndex = item.description.indexOf("<img src='http://www.scoop.it/rv?p=");
+        if (lastIndex>0) {
+          item.description = item.description.substring(0, lastIndex);
+        }
+      };
+      var source = $("#scoopit-template").html();
+      var template = Handlebars.compile(source);
+      var html = template(data);
+      $("#scoopit-news").append(html);
+      $('.scoopit-item-description > img').addClass('img-polaroid').addClass('span4')
     });
   });
 </script>
