@@ -50,7 +50,7 @@ title: "Flightwatching"
             {% if f.categories contains 'event' %}
             
             <span class="badge {% if f.date > site.time %}badge-important{% endif %}">
-              {{f.date | date: "%b %d" }}
+              {{f.date | date: "%b %d 20%y" }}
             </span>
             <small>{{f.content}}</small>
             {% endif %}
