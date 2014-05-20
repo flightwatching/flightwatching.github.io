@@ -24,6 +24,11 @@
     font-size: 3em;
 }
 
+.navbar .brand {
+    padding-top: 5px;
+    padding-bottom: 0px;
+}
+
 .number-circle {
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
