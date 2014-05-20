@@ -6,6 +6,10 @@
 	width:24px;
 }
 
+.nav-li:hover {
+    background-color: #EEEEEE;
+}
+
 .post-image {
 	width:250px;
 }
