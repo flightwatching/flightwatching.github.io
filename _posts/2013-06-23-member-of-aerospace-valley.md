@@ -1,9 +1,0 @@
----
-title: FlightWatching becomes member of Aerospace Valley
-categories: news
-image: img/customers/Aerospace-Valley.jpg
----
-Aerospace Valley administration commitee validated FlightWatching as a full time member, joining the Maintenance Cluster of the association.
-
-The Aerospace Valley Association is made up of companies, research centers, training centers and institutes of higher education, involved in these sectors in both the Midi-Pyrenees and Aquitaine regions.
-Aerospace Valley brings together the major players in engineering and consulting in a range of sectors including technical sciences, program management systems, industrial engineering and production. With offers organized around leading programs in aeronautics and space, these industries participate.
