@@ -1,9 +1,26 @@
 ---
 layout: layout
-title: "WILCO: connect & draw"
+title: "WILCO: Connect + Draw = Animate"
 ---
 <div id="services" class="container-fluid separator">
-  <h1>Draw your schematic and connect the data</h1>
+  <div class="row" id="wilco-product">
+    <div class="col-md-6 col-xs-6">
+        <img src="/img/index/bleed-illustrator.png" alt="draw" class="img-responsive img-thumbnail">
+        <h3>#1 <small>Draw your schematic or import your PDF</small></h3>
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <img src="/img/index/connect.png" alt="draw" class="img-responsive img-thumbnail">
+      <h3>#2 <small>Describe your data and name the parameters</small></h3>
+    </div>
+  </div>
+  <div class='row'>
+    <div class="col-md-12">
+      <h3 class='text-center'>#3 <small>your application is ready!</small></h3>
+      {% include bleed.svg %}
+    </div>
+  </div>  
+</div>
+<div id="services" class="container-fluid separator">
   <div class="row">
     <div class="col-md-4 service">
       <div class="fa fa-2x fa-rocket primary-color col-md-2 col-xs-2"></div>
@@ -32,7 +49,8 @@ title: "WILCO: connect & draw"
         </p>
       </div>
     </div>
-
+  </div>
+  <div class="row">
     <div class="col-md-4 service">
       <div class="fa fa-2x fa-html5 primary-color col-md-2 col-xs-2"></div>
       <div class="col-md-9 col-xs-10">
@@ -60,6 +78,8 @@ title: "WILCO: connect & draw"
         </p>
       </div>
     </div>
+  </div>
+  <div class="row">
     <div class="col-md-4 service">
       <div class="fa fa-2x fa-puzzle-piece primary-color col-md-2 col-xs-2"></div>
       <div class="col-md-9 col-xs-10">
@@ -69,5 +89,74 @@ title: "WILCO: connect & draw"
         </p>
       </div>
     </div>
+    <div class="col-md-4 service">
+      <div class="fa fa-2x fa-certificate primary-color col-md-2 col-xs-2"></div>
+      <div class="col-md-9 col-xs-10">
+        <h4>Experts on-board</h4>
+        <p>
+          We have experts in IT to help you decoding your data and use our tool. We have experts in aeronautics to decode or program ACMS reports, to handle QARs and to use 100% of ARINC-620 stardards
+        </p>
+      </div>
+    </div>
   </div>
 </div>
+<script type="text/javascript">
+$(function() {
+
+  var confClose = {
+    txt:"closing the valve",
+    needle_to: "rotate(0,-0.007-0.717)",
+    needle_from: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(90,+0.009,-1.952)",
+    prv_val: 0,
+    pack_val: 0.01,
+    color: "darkorange"
+  }
+  var confOpen = {
+    txt:"opening the valve",
+    needle_from: "rotate(0,-0.007-0.717)",
+    needle_to: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(0,+0.009,-1.952)",
+    prv_val: 52,
+    pack_val: 0.44,
+    color: "green"
+  }
+  var currentConf = confClose;
+  var transitionDuration = 3000;
+
+
+  function toggleValve(conf) {
+    console.log(conf.txt)
+    d3.select("#PRV_1_anim_clapet").transition().duration(transitionDuration).attr("transform", conf.valve);
+    d3.select("#PD_1_anim_needle").transition().delay(1000).duration(transitionDuration-1000).attrTween("transform", function() {
+        return d3.interpolateString(conf.needle_from, conf.needle_to);
+      });
+    d3.select("#PD_1_anim_Value").transition().delay(1000).duration(transitionDuration-1000).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.prv_val);
+      return function(t) {
+        this.textContent = Math.round(i(t));
+      };
+    });
+    d3.select("#PRV1LINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#LXLINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#FCV1_anim").transition().duration(transitionDuration).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.pack_val);
+      return function(t) {
+        this.textContent = i(t).toFixed(2);
+      };
+    });
+  }
+
+  toggleValve(currentConf),
+  setInterval(function(){
+    if (currentConf === confClose) {
+      currentConf = confOpen;
+    } else {
+      currentConf = confClose;
+    }
+    toggleValve(currentConf);
+  }, transitionDuration+300);
+
+});
+</script>
+

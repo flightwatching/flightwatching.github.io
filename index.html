@@ -2,203 +2,213 @@
 layout: layout
 title: "Flightwatching"
 ---
-    <div class="jumbotron full-bg animated-bg" data-bg="img/index/brakes2.jpg">
-      <div class="col-md-6 col-md-offset-3 centered text-center">
-        <img alt='FlightWatching' class='fixed-img' src="img/index/logo.png"/>
-        <p>Connect the dots</p>
-        <p>
-          <a class="btn btn-primary btn-lg" href="#services" role="button"><span class="fa-caret-down fa"></span> Discover</a>
-        </p>
-      </div>
-    </div>
+<div class="jumbotron full-bg animated-bg" data-bg="img/index/brakes2.jpg">
+  <div class="col-md-6 col-md-offset-3 centered text-center">
+    <img alt='FlightWatching' class='fixed-img' src="img/index/logo.png"/>
+    <p>Connect the dots</p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="#services" role="button"><span class="fa-caret-down fa"></span> Discover</a>
+    </p>
+  </div>
+</div>
 
-    <div id="services" class="container-fluid separator">
-      <h1>Draw your schematic and connect the data</h1>
-      <div class="row">
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-rocket primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Quick prototyping</h4>
-            <p>
-              Just draw your schematic with standard tools (like Illustrator), reuse PDF files, upload it to WILCO and it gets animated with your data! 
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-plug primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Proprietary data connectivity</h4>
-            <p>
-              WILCO layout helper allows you to describe your data and map it to parameters. For complex data, you can create your own adapter using the WILCO API. WILCO comes with some plugins to read CSVs, ACARS data and more...
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-bell-o primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>on the fly analysis and alerts</h4>
-            <p>
-              We call them IFTs (If <a>This</a> Then <a>That</a>). Create simple rules that runs each time a data is received and do something on event: send an e-mail, a SMS, command your system, make a request and more... The IFTs can be activated or desactivated in one click!
-            </p>
-          </div>
-        </div>
+<div id="services" class="container-fluid separator">
+  <div class="row" id="wilco-product">
+    <h2>Our technology <a class="btn btn-primary btn-lg" href="/wilco/index.html" role="button">Discover <span class="fa-caret-right fa"></span></a></h2>
+    <div class="col-md-6 col-xs-6">
+        <img src="/img/index/bleed-illustrator.png" alt="draw" class="img-responsive img-thumbnail">
+        <h3>#1 <small>Draw your schematic or import your PDF</small></h3>
+    </div>
+    <div class="col-md-6 col-xs-6">
+      <img src="/img/index/connect.png" alt="draw" class="img-responsive img-thumbnail">
+      <h3>#2 <small>Describe your data and name the parameters</small></h3>
+    </div>
+  </div>
+  <div class='row'>
+    <div class="col-md-12">
+      <h3 class='text-center'>#3 <small>your application is ready!</small></h3>
+      {% include bleed.svg %}
+    </div>
+  </div>  
 
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-html5 primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Latest WEB technologies</h4>
-            <p>
-              WILCO uses cutting edge technologies to bring to the live system status to the technicians or engineers in the browser, a tablet or a phone without any clientside installation
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-tachometer primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Stunning dashboards</h4>
-            <p>
-              The dashboards are interactives. Click on a gauge, you have access to all the relevant graphs. Click on a dot, WILCO brings you to the context of the dot. get access to the infinite timeline of events and filter.
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-lock primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Secured access</h4>
-            <p>
-              WILCO is based on secured HTTS access. You can manage your users, the access rights using the User admin page
-            </p>
-          </div>
-        </div>
-        <div class="col-md-4 service">
-          <div class="fa fa-2x fa-puzzle-piece primary-color col-md-2 col-xs-2"></div>
-          <div class="col-md-9 col-xs-10">
-            <h4>Easy integration</h4>
-            <p>
-              Wilco is open. all the data is accessible using a restful JSON API. you can integrate it into your information system to push or pull information. 
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
+</div>
 
-    <div class="container-fluid separator">
+<div class="container-fluid separator">
 
-      <div class="row">
-        <div class="col-md-4">
-          <h2>Some realizations in aeronautics</h2>
-          <p>We have connected the aircraft! We made fleet monitoring, predictive maintenance and turnaround KPIs live and easy without installing anything on-board.</p>
-          <p><a href="portfolio.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View all projects</a></p>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/index/ezy400x350.jpg">
-            <div class="caption">
-              <h4>EASYJET predictive maintenance</h4>
-              <p>Hi-tech FlightWatching monitoring and diagnostics tool will enable easyJet's engineering team to carry out real-time prognosis on all of its 220 aircraft inflight</p>
-              <a href="/projects/eazyjet.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6 col-md-4">
-          <div class="thumbnail">
-            <img src="img/index/dassault400x350.jpg">
-            <div class="caption">
-              <h4>Rafale maintenance data management</h4>
-              <p>WILCO is based on some Rafale data. WILCO is integrated in the e-Squadron Maintenance (ESM) developped by Dassault Aviation.
-              </p>
-              <a href="/projects/SDV.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
-            </div>
-          </div>
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Some realizations in aeronautics</h2>
+      <p><strong>We have connected the aircraft!</strong> We made fleet monitoring, predictive maintenance and turnaround KPIs live and easy without installing anything on-board.</p>
+      <p><a href="portfolio.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View all projects</a></p>
+    </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="img/index/ezy400x350.jpg">
+        <div class="caption">
+          <h4>EASYJET predictive maintenance</h4>
+          <p>Hi-tech FlightWatching monitoring and diagnostics tool will enable easyJet's engineering team to carry out real-time prognosis on all of its 220 aircraft inflight</p>
+          <a href="/projects/eazyjet.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
         </div>
       </div>
     </div>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="img/index/dassault400x350.jpg">
+        <div class="caption">
+          <h4>Rafale maintenance data management</h4>
+          <p>WILCO is based on some Rafale data. WILCO is integrated in the e-Squadron Maintenance (ESM) developped by Dassault Aviation.
+          </p>
+          <a href="/projects/SDV.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <div id="testimonials" class="container-fluid text-center separator">
-      <div class="row">
-        <div class="col-md-12">
-          <h3></h3>
+<div id="testimonials" class="container-fluid text-center separator">
+  <div class="row">
+    <div class="col-md-12">
+      <h3></h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <a href='data/EasyJetPressRelease.pdf'><div href="#" class="testimonial">
+        <img src="img/index/pressRelease.png" alt="">
+        <div class="title">
+          <h4>ESAYJET press release</h4>
+          <h5>Innovation Day, May 2014</h5>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <a href='data/EasyJetPressRelease.pdf'><div href="#" class="testimonial">
-            <img src="img/index/pressRelease.png" alt="">
-            <div class="title">
-              <h4>ESAYJET press release</h4>
-              <h5>Innovation Day, May 2014</h5>
-            </div>
-          </div>
-        </div></a>
-        <div class="col-md-8">
-          <div href="#" class="testimonial">
-              <iframe src="http://player.vimeo.com/video/109104722?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="623" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <div class="title">
-              <h4>Swaran Sidhu</h4>
-              <h5>Head of Fleet Technical Management, EasyJet</h5>
-            </div>
-          </div>
+    </div></a>
+    <div class="col-md-8">
+      <div href="#" class="testimonial">
+          <iframe src="http://player.vimeo.com/video/109104722?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="623" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <div class="title">
+          <h4>Swaran Sidhu</h4>
+          <h5>Head of Fleet Technical Management, EasyJet</h5>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
-    <div id="brand-title" class="container-fluid text-center">
-      <div class="row">
-        <h3>Clients and partners</h3>
+<div id="brand-title" class="container-fluid text-center">
+  <div class="row">
+    <h3>Clients and partners</h3>
+  </div>
+</div>
+<div id="brands" class="container-fluid">
+  <ul class="row brand-list">
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/dassault-logo-350x100.png"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/rockwell_collins_logo.jpg"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/esa.png"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/EADS_Develop.jpg"></li>
+  </ul>
+</div>
+
+<!--div class="container-fluid first-foot">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Why Us?</h4>
+      <p>Because we can!</p>
+      <h5>
+        Sign up for our Newsletter
+      </h5>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="E-mail address">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Sign up!</button>
+        </span>
       </div>
     </div>
-    <div id="brands" class="container-fluid">
-      <ul class="row brand-list">
-        <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/dassault-logo-350x100.png"></li>
-        <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/rockwell_collins_logo.jpg"></li>
-        <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/esa.png"></li>
-        <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/EADS_Develop.jpg"></li>
-      </ul>
-    </div>
-    
-    <div class="container-fluid first-foot">
-      <div class="row">
-        <div class="col-md-3">
-          <h4>Why Us?</h4>
-          <p>Because we can!</p>
-          <h5>
-            Sign up for our Newsletter
-          </h5>
-          <div class="input-group">
-            <input type="text" class="form-control" placeholder="E-mail address">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">Sign up!</button>
-            </span>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <h4>Recent posts</h4>
-          <div class="list-group">
-            <a href="single.html" class="list-group-item">
-              <h5 class="list-group-item-heading">This is an example post!</h5>
-              <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
-            </a>
-            <a href="single.html" class="list-group-item">
-              <h5 class="list-group-item-heading">This is the second post!</h5>
-              <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
-            </a>
-            <a href="single.html" class="list-group-item">
-              <h5 class="list-group-item-heading">This is the very first post!</h5>
-              <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
-            </a>
-          </div>
-        </div>
-        <div id="shots" class="col-md-3">
-          <h4>Recent Shots</h4>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-          <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
-        </div>
+    <div class="col-md-6">
+      <h4>Recent posts</h4>
+      <div class="list-group">
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is an example post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is the second post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is the very first post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
       </div>
     </div>
+    <div id="shots" class="col-md-3">
+      <h4>Recent Shots</h4>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+    </div>
+  </div>
+</div-->
+<script type="text/javascript">
+$(function() {
+
+  var confClose = {
+    txt:"closing the valve",
+    needle_to: "rotate(0,-0.007-0.717)",
+    needle_from: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(90,+0.009,-1.952)",
+    prv_val: 0,
+    pack_val: 0.01,
+    color: "darkorange"
+  }
+  var confOpen = {
+    txt:"opening the valve",
+    needle_from: "rotate(0,-0.007-0.717)",
+    needle_to: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(0,+0.009,-1.952)",
+    prv_val: 52,
+    pack_val: 0.44,
+    color: "green"
+  }
+  var currentConf = confClose;
+  var transitionDuration = 3000;
+
+
+  function toggleValve(conf) {
+    console.log(conf.txt)
+    d3.select("#PRV_1_anim_clapet").transition().duration(transitionDuration).attr("transform", conf.valve);
+    d3.select("#PD_1_anim_needle").transition().delay(1000).duration(transitionDuration-1000).attrTween("transform", function() {
+        return d3.interpolateString(conf.needle_from, conf.needle_to);
+      });
+    d3.select("#PD_1_anim_Value").transition().delay(1000).duration(transitionDuration-1000).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.prv_val);
+      return function(t) {
+        this.textContent = Math.round(i(t));
+      };
+    });
+    d3.select("#PRV1LINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#LXLINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#FCV1_anim").transition().duration(transitionDuration).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.pack_val);
+      return function(t) {
+        this.textContent = i(t).toFixed(2);
+      };
+    });
+  }
+
+  toggleValve(currentConf),
+  setInterval(function(){
+    if (currentConf === confClose) {
+      currentConf = confOpen;
+    } else {
+      currentConf = confClose;
+    }
+    toggleValve(currentConf);
+  }, transitionDuration+300);
+
+});
+</script>
