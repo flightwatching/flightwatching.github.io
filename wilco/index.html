@@ -14,10 +14,24 @@ title: "WILCO: Connect + Draw = Animate"
     </div>
   </div>
   <div class='row'>
-    <div class="col-md-12">
       <h3 class='text-center'>#3 <small>your application is ready!</small></h3>
+    <div class="col-md-12">
       {% include bleed.svg %}
     </div>
+    <div class="col-md-12 col-md-offset-4" id="email-notif">
+      <div class='media'>
+        <img class="pull-left" src="/img/icons/mail-notif.png" height="100px" alt="e-mail notification"/>
+        <div class='media-body'>
+          <strong>to: mcc@yourcompany.com</strong><br>
+          <strong class='text-danger'>[FW-WOW] Left engine pressure is low.</strong>
+          <p>
+          <small>SMS has been sent to maintenance team.<br>
+          <a>Here</a> is the documentation...</small>
+          </p>
+        </div>
+      </div>
+    </div>
+
   </div>  
 </div>
 <div id="services" class="container-fluid separator">
@@ -103,6 +117,8 @@ title: "WILCO: Connect + Draw = Animate"
 <script type="text/javascript">
 $(function() {
 
+  $('#email-notif').hide();
+
   var confClose = {
     txt:"closing the valve",
     needle_to: "rotate(0,-0.007-0.717)",
@@ -110,7 +126,8 @@ $(function() {
     valve: "rotate(90,+0.009,-1.952)",
     prv_val: 0,
     pack_val: 0.01,
-    color: "darkorange"
+    color: "darkorange",
+    notif: true
   }
   var confOpen = {
     txt:"opening the valve",
@@ -119,7 +136,8 @@ $(function() {
     valve: "rotate(0,+0.009,-1.952)",
     prv_val: 52,
     pack_val: 0.44,
-    color: "green"
+    color: "green",
+    notif: false
   }
   var currentConf = confClose;
   var transitionDuration = 3000;
@@ -137,7 +155,13 @@ $(function() {
         this.textContent = Math.round(i(t));
       };
     });
-    d3.select("#PRV1LINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#PRV1LINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color).each ('end', function() {
+      if (conf.notif) {
+        $('#email-notif').show();
+      } else {
+        $('#email-notif').hide();
+      }
+    });
     d3.select("#LXLINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
     d3.select("#FCV1_anim").transition().duration(transitionDuration).tween("text", function() {
       var i = d3.interpolate(this.textContent, conf.pack_val);
