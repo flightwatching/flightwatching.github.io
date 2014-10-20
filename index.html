@@ -2,64 +2,235 @@
 layout: layout
 title: "Flightwatching"
 ---
-
-<div id="myCarousel" class="carousel slide">
-  <!-- Carousel items -->
-  <div class="carousel-inner">
-{% for post in site.posts %}
-    {% if post.categories contains 'carousel' %}
-    <div class="{{post.class}} item">
-      <div class="text-center">
-        <img src="{{post.image}}" width="100%" alt="" />
-      </div>
-      <div class="carousel-caption">
-        <h2>{{post.title}}</h2>
-        <p>{{post.content}}</p>
-      </div>
-    </div>
-    {% endif %}
-{% endfor %}
-    </div>
-  <!-- Carousel nav -->
-  <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
-  <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+<div class="jumbotron full-bg animated-bg" data-bg="img/index/brakes2.jpg">
+  <div class="col-md-6 col-md-offset-3 centered text-center">
+    <img alt='FlightWatching' class='fixed-img' src="img/index/logo.png"/>
+    <p>Connect the dots</p>
+    <p>
+      <a class="btn btn-primary btn-lg" href="#services" role="button"><span class="fa-caret-down fa"></span> Discover</a>
+    </p>
+  </div>
 </div>
 
-<div class="container">
-<div class="row-fluid">
-  <ul class="thumbnails">
-  {% for f in site.posts %}
-    {% if f.categories contains 'featured' %}
-    <li class="span4">
+<div id="services" class="container-fluid separator">
+  <div class='row'>
+    <h2>Our products</h2>
+    <div class='row'>
+      <div class='col-md-6'>
+        <h3 >WILCO <a class="btn btn-primary btn-lg" href="/wilco/index.html" role="button">Discover <span class="fa-caret-right fa"></span></a></h3>
+        <h3><small>WILCO allows you to generate your monitoring application without any coding. Draw and it gets animated with your data!</small></h3>
+      </div>
+      <div class='col-md-6'>
+        <h3>Checklist <a class="btn btn-primary btn-lg" href="/checklist/index.html" role="button">Discover <span class="fa-caret-right fa"></span></a></h3>
+        <h3><small>Checklist is a mobile application to mix visual inspections to your data. Take photos on the field and the reports are created automatically</small></h3>
+      </div>
+    </div>
+    <div id='wilco'>
+
+
+      <div class="col-md-12">
+        {% include bleed.svg %}
+        <div class="col-md-5 col-md-offset-7" id="email-notif" style="margin-top: -200px; min-height:200px; background-color: white;box-shadow: 10px 10px 10px #333333;">
+          <div class='media'>
+            <img class="pull-left" src="/img/icons/mail-notif.png" height="100px" alt="e-mail notification"/>
+            <div class='media-body'>
+              <strong>to: mcc@yourcompany.com</strong><br>
+              <strong class='text-danger'>[FW-WOW] Left engine pressure is low.</strong>
+              <p>
+              <small>SMS has been sent to maintenance team.<br>
+              <a>Here</a> is the documentation...</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+
+
+</div>
+
+<div class="container-fluid separator">
+
+  <div class="row">
+    <div class="col-md-4">
+      <h2>Some realizations in aeronautics</h2>
+      <p><strong>We have connected the aircraft!</strong> We made fleet monitoring, predictive maintenance and turnaround KPIs live and easy without installing anything on-board.</p>
+      <p><a href="portfolio.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View all projects</a></p>
+    </div>
+    <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img  src="{{f.image}}">
+        <img src="img/index/ezy400x350.jpg">
         <div class="caption">
-          <h3>{{f.title}}</h3>
-          <p>{{f.content}}</p>
+          <h4>EASYJET predictive maintenance</h4>
+          <p>Hi-tech FlightWatching monitoring and diagnostics tool will enable easyJet's engineering team to carry out real-time prognosis on all of its 220 aircraft inflight</p>
+          <a href="/projects/eazyjet.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
         </div>
       </div>
-    </li>
-    {% endif %}
-  {% endfor %}
-    <li class="span4">
+    </div>
+    <div class="col-sm-6 col-md-4">
       <div class="thumbnail">
-        <img  src="{{site.baseurl }}img/icons/event.png">
-        <div class="caption" id="events">
-          <h3>Events to come</h3>
-          {% for f in site.posts %}
-            {% if f.categories contains 'event' %}
-            
-            <span class="badge {% if f.date > site.time %}badge-important{% endif %}">
-              {{f.date | date: "%b %d 20%y" }}
-            </span>
-            <small>{{f.content}}</small>
-            {% endif %}
-          {% endfor %}
+        <img src="img/index/dassault400x350.jpg">
+        <div class="caption">
+          <h4>Rafale maintenance data management</h4>
+          <p>WILCO is based on some Rafale data. WILCO is integrated in the e-Squadron Maintenance (ESM) developped by Dassault Aviation.
+          </p>
+          <a href="/projects/SDV.html" class="btn btn-primary" role="button"><span class="fa-arrow-circle-right fa"></span> View Details</a>
         </div>
       </div>
-    </li>
+    </div>
+  </div>
+</div>
+
+
+<div id="clients" class="container-fluid text-center">
+  <div class="row">
+    <h3>Clients and partners</h3>
+  </div>
+</div>
+<div id="brands" class="container-fluid">
+  <ul class="row brand-list">
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/dassault-logo-350x100.png"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/rockwell_collins_logo.jpg"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/esa.png"></li>
+    <li class="col-md-3 col-sm-6 col-xs-6"><img src="img/index/client-logos/EADS_Develop.jpg"></li>
   </ul>
-</div>
+
+  <div id="testimonials" class="container-fluid text-center">
+    <div class="row">
+      <div class="col-md-4">
+        <a href='data/EasyJetPressRelease.pdf'><div href="#" class="testimonial">
+          <img src="img/index/pressRelease.png" alt="">
+          <div class="title">
+            <h4>ESAYJET press release</h4>
+            <h5>Innovation Day, May 2014</h5>
+          </div>
+        </div>
+      </div></a>
+      <div class="col-md-8">
+        <div href="#" class="testimonial">
+            <div class="title">
+              <h4>Swaran Sidhu<small> - Head of Fleet Technical Management, EasyJet</small></h4>
+            </div>
+            <iframe src="http://player.vimeo.com/video/109104722?title=0&amp;byline=0&amp;portrait=0&amp;color=ff9933" width="100%" height="350" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
+<!--div class="container-fluid first-foot">
+  <div class="row">
+    <div class="col-md-3">
+      <h4>Why Us?</h4>
+      <p>Because we can!</p>
+      <h5>
+        Sign up for our Newsletter
+      </h5>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="E-mail address">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">Sign up!</button>
+        </span>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <h4>Recent posts</h4>
+      <div class="list-group">
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is an example post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is the second post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
+        <a href="single.html" class="list-group-item">
+          <h5 class="list-group-item-heading">This is the very first post!</h5>
+          <p class="list-group-item-text"> Integer nulla neque, porttitor eget interdum ac.</p>
+        </a>
+      </div>
+    </div>
+    <div id="shots" class="col-md-3">
+      <h4>Recent Shots</h4>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+      <a class="thumbnail" href="#"><img src="http://placehold.it/400x350"></a>
+    </div>
+  </div>
+</div-->
+<script type="text/javascript">
+$(function() {
 
+  $('#email-notif').hide();
+
+  var confClose = {
+    txt:"closing the valve",
+    needle_to: "rotate(0,-0.007-0.717)",
+    needle_from: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(90,+0.009,-1.952)",
+    prv_val: 0,
+    pack_val: 0.01,
+    color: "darkorange",
+    notif: true
+  }
+  var confOpen = {
+    txt:"opening the valve",
+    needle_from: "rotate(0,-0.007-0.717)",
+    needle_to: "rotate(-221,-0.007-0.717)",
+    valve: "rotate(0,+0.009,-1.952)",
+    prv_val: 52,
+    pack_val: 0.44,
+    color: "green",
+    notif: false
+  }
+  var currentConf = confClose;
+  var transitionDuration = 3000;
+
+
+  function toggleValve(conf) {
+    console.log(conf.txt)
+    d3.select("#PRV_1_anim_clapet").transition().duration(transitionDuration).attr("transform", conf.valve);
+    d3.select("#PD_1_anim_needle").transition().delay(1000).duration(transitionDuration-1000).attrTween("transform", function() {
+        return d3.interpolateString(conf.needle_from, conf.needle_to);
+      });
+    d3.select("#PD_1_anim_Value").transition().delay(1000).duration(transitionDuration-1000).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.prv_val);
+      return function(t) {
+        this.textContent = Math.round(i(t));
+      };
+    });
+    d3.select("#PRV1LINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color).each ('end', function() {
+      if (conf.notif) {
+        $('#email-notif').show();
+      } else {
+        $('#email-notif').hide();
+      }
+    });
+    d3.select("#LXLINE_anim").transition().delay(1000).duration(transitionDuration-1000).attr("stroke", conf.color);
+    d3.select("#FCV1_anim").transition().duration(transitionDuration).tween("text", function() {
+      var i = d3.interpolate(this.textContent, conf.pack_val);
+      return function(t) {
+        this.textContent = i(t).toFixed(2);
+      };
+    });
+  }
+
+  toggleValve(currentConf),
+  setInterval(function(){
+    if (currentConf === confClose) {
+      currentConf = confOpen;
+    } else {
+      currentConf = confClose;
+    }
+    toggleValve(currentConf);
+  }, transitionDuration+300);
+
+});
+</script>
