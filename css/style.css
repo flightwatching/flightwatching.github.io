@@ -104,7 +104,9 @@ h4 {
   .container-fluid.nav-head.affix-top {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background: transparent;}
+  background-image: url('/img/logo-header.png');
+  background-repeat: no-repeat;
+background-size: 100%;}
 
   .container-fluid.nav-head.affix,
   .container-fluid.nav-head.affix-bottom {
@@ -451,6 +453,7 @@ ul.btn-group {
 /*****************
   Navigation
 ******************/
+
 
 .navbar {
   width: 300px;
