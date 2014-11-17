@@ -85,7 +85,7 @@
 			 </div>
 		</div>
 		<div class='col-md-3 col-sd-2'>
-			<img class="img-rounded" width="100%" src="/img/index/client-logos/esabic.png" alt="ESA-BIC">
+			<img  data-toggle="popover" data-placement="bottom" title="2014 ESA-BIC incubee" data-content="Flightwatching has been selected for the development of its remote diagnosis solution for aircraft in flight" data-trigger="focus" class="img-rounded" width="100%" src="/img/index/client-logos/esabic.png" alt="ESA-BIC">
 		</div>
 		<div class='col-md-2 col-sd-2'>
 			<img class="img-rounded" width="100%" src="http://www.toulousespaceshow.eu/tss12/en/wp-content/uploads/logo_club_galaxie-300x104.jpg" alt="Galaxy club">
@@ -144,7 +144,11 @@
 
 	</div>
 </div>
-
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="popover"]').popover('show')
+});
+</script>
 
     <div class="container-fluid social-icons">
       <div class="row">
