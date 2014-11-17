@@ -198,7 +198,7 @@ footer {
   footer .logo {
     font-size: 1em; }
 
-.first-foot #shots a.thumbnail {
+.first-foot #shots a.thumbnail-hovered {
   max-width: 31%;
   margin-top: 0;
   margin-bottom: 0;
@@ -229,7 +229,7 @@ footer {
 .post {
   padding: 25px 0; }
 
-  .post .thumbnail {
+  .post .thumbnail-hovered {
     border: 0;
     padding: 0; }
 
@@ -264,7 +264,7 @@ a.icon {
   font-weight: 400;
   font-size: 1.7em; }
 
-.thumbnail {
+.thumbnail-hovered {
   margin-bottom: 15px;
   margin-top: 15px;
   display: inline-block;
@@ -276,13 +276,13 @@ a.icon {
   -ms-border-radius: 0;
   border-radius: 0; }
 
-  .thumbnail img {
+  .thumbnail-hovered img {
     max-width: 100%;
     height: auto;
     position: relative;
     z-index: 1; }
 
-  .thumbnail .caption {
+  .thumbnail-hovered .caption {
     position: absolute;
     left: 0;
     top: 0;
@@ -306,7 +306,7 @@ a.icon {
     -o-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1); }
 
-.thumbnail .caption, #Container.grid .mix .caption {
+.thumbnail-hovered .caption, #Container.grid .mix .caption {
   -webkit-transform: scale(1.1, 1.1);
   -moz-transform: scale(1.1, 1.1);
   transform: scale(1.1, 1.1);
@@ -315,7 +315,7 @@ a.icon {
   -o-transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1);
   transition: all 0.3s cubic-bezier(0.42, 0, 0.58, 1); }
 
-.thumbnail:hover .caption, #Container.grid .mix:hover .caption {
+.thumbnail-hovered:hover .caption, #Container.grid .mix:hover .caption {
   -webkit-transform: scale(1, 1);
   -moz-transform: scale(1, 1);
   transform: scale(1, 1);
@@ -721,7 +721,7 @@ ul.nav-list {
   margin-top: 20px;
   margin-bottom: 20px; }
 
-.single .thumbnail img {
+.single .thumbnail-hovered img {
   margin: 0; }
 
 .single h4 {
@@ -1014,7 +1014,7 @@ ul.archive {
 		font-size: 14px;
 	}
 
-	.thumbnail .caption {
+	.thumbnail-hovered .caption {
 		padding: 10px 20px;
 	}
 
@@ -1042,7 +1042,7 @@ ul.archive {
 		margin: 10px 0;
 	}
 
-	#shots .thumbnail {
+	#shots .thumbnail-hovered {
 		max-width: 32.1%;
 	}
 
@@ -1115,11 +1115,11 @@ ul.archive {
 		padding-bottom: 5px;
 	}
 
-	.thumbnail {
+	.thumbnail-hovered {
 		margin-bottom: 5px;
 	}
 
-	.thumbnail .caption {
+	.thumbnail-hovered .caption {
 		padding: 10px 35px;
 	}
 

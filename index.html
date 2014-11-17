@@ -2,9 +2,9 @@
 layout: layout
 title: ""
 ---
-<div class="jumbotron full-bg animated-bg" data-bg="img/index/brakes2.jpg">
+<div class="jumbotron full-bg animated-bg" data-bg="img/index/fotolia_30609198.jpg">
   <div class="col-md-6 col-md-offset-3 centered text-center">
-    <img alt='FlightWatching' class='fixed-img' src="img/index/logo2.png"/>
+    <img alt='FlightWatching' style="opacity:0.8;" class='fixed-img' src="img/index/logo2.png"/>
     <p>Connect the dots</p>
     <p>
       <a class="btn btn-primary btn-lg" href="#services" role="button"><span class="fa-caret-down fa"></span> Discover</a>
@@ -61,7 +61,7 @@ title: ""
     <div class="col-sm-6 col-md-4">
       <a href="/projects/eazyjet.html" >
         <h4 class="text-center">easyJet predictive maintenance</h4>
-        <div class="thumbnail">
+        <div class="thumbnail thumbnail-hovered">
           <img src="img/index/ezy400x350.jpg">
           <div class="caption">
             <h4>EASYJET predictive maintenance</h4>
@@ -72,8 +72,8 @@ title: ""
     </div>
     <div class="col-sm-6 col-md-4">
       <a href="/projects/SDV.html">
-        <h4 class="text-center">Rafale data management</h4>
-        <div class="thumbnail">
+        <h4 class="text-center">Dassault: Rafale data management</h4>
+        <div class="thumbnail thumbnail-hovered">
           <img src="img/index/dassault400x350.jpg">
           <div class="caption">
             <h4>Rafale data management</h4>
@@ -186,7 +186,7 @@ $(function() {
     notif: false
   }
   var currentConf = confClose;
-  var transitionDuration = 3000;
+  var transitionDuration = 6000;
 
 
   function toggleValve(conf) {
