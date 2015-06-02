@@ -89,6 +89,7 @@ h4 {
   margin-top: -150px; }
 
 .container-fluid.nav-head {
+  pointer-events: none;
   padding-top: 15px;
   padding-bottom: 15px;
   position: fixed;
@@ -126,6 +127,7 @@ background-size: 100%;}
 
   .container-fluid.nav-head #menu-trigger {
     color: #222;
+    pointer-events: all;
     -webkit-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     -moz-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
     -o-transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
@@ -133,6 +135,8 @@ background-size: 100%;}
     cursor: pointer;
     height: 50px;
     line-height: 50px; }
+
+
 
   .breadcrumb-container {
     background: #eee;
