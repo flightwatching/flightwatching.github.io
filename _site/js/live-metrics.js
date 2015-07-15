@@ -7,7 +7,6 @@ var getSampleCount = function() {
 		function( data ) {
 			for (var i = 0; i < 10; i++) {
 				setTimeout(function(val) {
-					console.log(val)
 					$(".odometer").html(val);
 				}, 6000*i, Math.floor(+data.prev+(+data.next-data.prev)*i/10));
 			}
