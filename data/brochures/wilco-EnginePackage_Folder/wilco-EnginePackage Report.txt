@@ -1,0 +1,88 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: wilco-EnginePackage.ai
+Color Mode: CMYK color
+Color Profile: none
+Ruler Units: centimeters
+Artboard Dimensions: 10.5833 cm x 21.6677 cm
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Gill Sans Light (TrueType)
+Gill Sans (TrueType)
+Verdana (OTF)
+NewCicle Gordita (TrueType)
+NewCicle Fina (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+
+/Volumes/FW/Images_videos/Photos/aircraft parts/Cabin.JPG
+Type: Other
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Aircraft_TO_FlightWatchingBlue.png
+Type: CMYK
+Bits per Pixel: 32
+Channels: 4
+Size: 2966K, 1006 by 755 pixels
+Dimensions: 238.84 by 179.249 points 
+Resolution: 303.266 by 303.266 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Logo_avionGris_fondBlanc.png
+Type: Transparent CMYK
+Bits per Pixel: 40
+Channels: 5
+Size: 262K, 507 by 106 pixels
+Dimensions: 146.793 by 30.69 points 
+Resolution: 248.677 by 248.677 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/PACK_dashboard3.png
+Type: CMYK
+Bits per Pixel: 32
+Channels: 4
+Size: 1466K, 675 by 556 pixels
+Dimensions: 247.917 by 204.21 points 
+Resolution: 196.034 by 196.034 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/FW_Objects_fondNoir - copie
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 4404K, 1807 by 832 pixels
+Dimensions: 376.91 by 173.541 points 
+Resolution: 345.186 by 345.186 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/slide#04_4
+Type: CMYK
+Bits per Pixel: 32
+Channels: 4
+Size: 3072K, 1024 by 768 pixels
+Dimensions: 555.023 by 416.268 points 
+Resolution: 132.838 by 132.838 pixels per inch

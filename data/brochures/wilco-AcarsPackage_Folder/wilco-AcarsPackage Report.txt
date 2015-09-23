@@ -1,0 +1,87 @@
+Package Report
+
+-----------------------------------------------------------------------------
+Document:
+Name: wilco-AcarsPackage.ai
+Color Mode: RGB color
+Color Profile: none
+Ruler Units: centimeters
+Artboard Dimensions: 24.5988 cm x 21.3431 cm
+Show Images in Outline Mode: OFF
+Highlight Substituted Fonts: OFF
+Highlight Substituted Glyphs: OFF
+Preserve Text Editability
+Simulate Colored Paper: OFF
+
+-----------------------------------------------------------------------------
+Spot Color Objects:
+
+-----------------------------------------------------------------------------
+Missing Fonts:NONE
+
+-----------------------------------------------------------------------------
+Protected Fonts that were not packaged:NONE
+
+-----------------------------------------------------------------------------
+Fonts:
+Myriad Pro (OTF)
+Gill Sans Light (TrueType)
+Gill Sans (TrueType)
+Verdana (OTF)
+NewCicle Gordita (TrueType)
+NewCicle Fina (TrueType)
+
+-----------------------------------------------------------------------------
+Embedded Fonts:
+NONE
+
+-----------------------------------------------------------------------------
+Missing Links:
+NONE
+
+-----------------------------------------------------------------------------
+Linked Images:
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Photo avec Casque - copie
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 52488K, 5184 by 3456 pixels
+Dimensions: 236.878 by 157.918 points 
+Resolution: 1575.699 by 1575.699 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/RMP.jpg
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 5549K, 1900 by 997 pixels
+Dimensions: 294.595 by 154.585 points 
+Resolution: 464.366 by 464.366 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Aircraft_TO_FlightWatchingBlue.png
+Type: RGB
+Bits per Pixel: 24
+Channels: 3
+Size: 2225K, 1006 by 755 pixels
+Dimensions: 335.426 by 251.736 points 
+Resolution: 215.94 by 215.94 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Logo_avionGris_fondBlanc.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 209K, 507 by 106 pixels
+Dimensions: 146.793 by 30.69 points 
+Resolution: 248.677 by 248.677 pixels per inch
+
+
+/Users/dao/dev/flightwatching.github.io/data/brochures/Logo_avionGris_fondBlanc.png
+Type: Transparent RGB
+Bits per Pixel: 32
+Channels: 4
+Size: 209K, 507 by 106 pixels
+Dimensions: 146.793 by 30.69 points 
+Resolution: 248.677 by 248.677 pixels per inch
