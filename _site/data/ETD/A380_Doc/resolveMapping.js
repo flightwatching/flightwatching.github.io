@@ -23,6 +23,9 @@ var QueryString = function () {
 
 console.log(QueryString)
 var fcFolder = '/data/ETD/A380_Doc/'+QueryString.FC+"/";
+if (QueryString.nogo) {
+	$("#header").addClass("nogo");
+}
 $('#ac-reg').html(QueryString.reg);
 $('#ACCESS1').attr('src', fcFolder+'ACCESS1.png')
 $('#ACCESS2').attr('src', fcFolder+'ACCESS2.png')

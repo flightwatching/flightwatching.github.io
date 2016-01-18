@@ -25,10 +25,21 @@
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
+
+	<style type="text/css">
+	.nogo {
+		background-color: black;
+		color: lightgray;
+	}
+	div.figure {
+   page-break-inside: avoid;
+	}
+	</style>
+
 </head>
 <body>
 	<div class="container">
-		<div class="jumbotron">
+		<div class="jumbotron" id="header">
 			<div class="media">
 				<div class="media-left">
 					<a href="#">
@@ -42,7 +53,7 @@
 			</div>
 		</div>
 
-		<div class="page-header">
+		<div class="page-header hidden-print">
 			<div class="row">
 				<div class="text-center col-md-12">
 					<h2>Access panels</h2>
@@ -51,16 +62,16 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-6">
-				<img id="ACCESS1" src="" alt="ACCESS1" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="ACCESS1" src="" alt="ACCESS1" width="100%" class=""/>
 			</div>
-			<div class="col-md-6">
-				<img id="ACCESS2" src="" alt="ACCESS2" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="ACCESS2" src="" alt="ACCESS2" width="100%" class=""/>
 			</div>
 		</div>
 
 
-		<div class="page-header">
+		<div class="page-header hidden-print">
 			<div class="row">
 				<div class="text-center col-md-12">
 					<h2>Schematics</h2>
@@ -69,19 +80,19 @@
 		</div>
 
 		<div class="row">
-			<div class="col-md-6">
-				<img id="fig1" src="" alt="FIG1" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="fig1" src="" alt="FIG1" width="100%" class=""/>
 			</div>
-			<div class="col-md-6">
-				<img id="fig2" src="" alt="FIG2" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="fig2" src="" alt="FIG2" width="100%" class=""/>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-6">
-				<img id="fig3" src="" alt="FIG3" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="fig3" src="" alt="FIG3" width="100%" class=""/>
 			</div>
-			<div class="col-md-6">
-				<img id="fig4" src="" alt="FIG4" width="100%" class="img-thumbnail"/>
+			<div class="col-md-6 figure">
+				<img id="fig4" src="" alt="FIG4" width="100%" class=""/>
 			</div>
 		</div>
 	</div>
