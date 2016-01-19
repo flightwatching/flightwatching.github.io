@@ -21,17 +21,18 @@ var QueryString = function () {
     return query_string;
 }();
 
-console.log(QueryString)
 var fcFolder = '/data/ETD/A380_Doc/'+QueryString.FC+"/";
 if (QueryString.nogo) {
 	$("#header").addClass("nogo");
 }
+
+$('#bite-msg').html(QueryString.FC+" - "+QueryString.description);
 $('#ac-reg').html(QueryString.reg);
-$('#ACCESS1').attr('src', fcFolder+'ACCESS1.png')
-$('#ACCESS2').attr('src', fcFolder+'ACCESS2.png')
-$('#LOC1').attr('src', fcFolder+'LOC1.png')
-$('#LOC2').attr('src', fcFolder+'LOC2.png')
-$('#fig1').attr('src', fcFolder+'fig1.png')
-$('#fig2').attr('src', fcFolder+'fig2.png')
-$('#fig3').attr('src', fcFolder+'fig3.png')
-$('#fig4').attr('src', fcFolder+'fig4.png')
+$('#ACCESS1').attr('src', fcFolder+'ACCESS1.png');
+$('#ACCESS2').attr('src', fcFolder+'ACCESS2.png');
+$('#LOC1').attr('src', fcFolder+'LOC1.png');
+$('#LOC2').attr('src', fcFolder+'LOC2.png');
+$('#fig1').attr('src', fcFolder+'fig1.png');
+$('#fig2').attr('src', fcFolder+'fig2.png');
+$('#fig3').attr('src', fcFolder+'fig3.png');
+$('#fig4').attr('src', fcFolder+'fig4.png');
