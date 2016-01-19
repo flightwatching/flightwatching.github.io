@@ -29,6 +29,8 @@ if (QueryString.nogo) {
 $('#ac-reg').html(QueryString.reg);
 $('#ACCESS1').attr('src', fcFolder+'ACCESS1.png')
 $('#ACCESS2').attr('src', fcFolder+'ACCESS2.png')
+$('#LOC1').attr('src', fcFolder+'LOC1.png')
+$('#LOC2').attr('src', fcFolder+'LOC2.png')
 $('#fig1').attr('src', fcFolder+'fig1.png')
 $('#fig2').attr('src', fcFolder+'fig2.png')
 $('#fig3').attr('src', fcFolder+'fig3.png')
