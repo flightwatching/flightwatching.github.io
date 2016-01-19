@@ -29,6 +29,8 @@ if (QueryString.nogo) {
 $('#bite-msg').html(QueryString.FC+" - "+QueryString.description);
 $('#ac-reg').html(QueryString.reg);
 $('#bite-utc').html(QueryString.utc);
+$('#bite-date').html(QueryString.date);
+$('#bite-loc').html(QueryString.loc);
 $('#ACCESS1').attr('src', fcFolder+'ACCESS1.png');
 $('#ACCESS2').attr('src', fcFolder+'ACCESS2.png');
 $('#ACCESS3').attr('src', fcFolder+'ACCESS3.png');
@@ -39,3 +41,7 @@ $('#fig1').attr('src', fcFolder+'fig1.png');
 $('#fig2').attr('src', fcFolder+'fig2.png');
 $('#fig3').attr('src', fcFolder+'fig3.png');
 $('#fig4').attr('src', fcFolder+'fig4.png');
+$('#fig5').attr('src', fcFolder+'fig5.png');
+$('#fig6').attr('src', fcFolder+'fig6.png');
+$('#fig7').attr('src', fcFolder+'fig7.png');
+$('#fig8').attr('src', fcFolder+'fig8.png');
