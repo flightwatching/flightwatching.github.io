@@ -28,6 +28,7 @@ if (QueryString.nogo) {
 
 $('#bite-msg').html(QueryString.FC+" - "+QueryString.description);
 $('#ac-reg').html(QueryString.reg);
+$('#bite-utc').html(QueryString.utc);
 $('#ACCESS1').attr('src', fcFolder+'ACCESS1.png');
 $('#ACCESS2').attr('src', fcFolder+'ACCESS2.png');
 $('#ACCESS3').attr('src', fcFolder+'ACCESS3.png');
