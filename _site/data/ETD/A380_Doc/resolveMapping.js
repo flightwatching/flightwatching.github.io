@@ -30,6 +30,8 @@ $('#bite-msg').html(QueryString.FC+" - "+QueryString.description);
 $('#ac-reg').html(QueryString.reg);
 $('#ACCESS1').attr('src', fcFolder+'ACCESS1.png');
 $('#ACCESS2').attr('src', fcFolder+'ACCESS2.png');
+$('#ACCESS3').attr('src', fcFolder+'ACCESS3.png');
+$('#ACCESS4').attr('src', fcFolder+'ACCESS4.png');
 $('#LOC1').attr('src', fcFolder+'LOC1.png');
 $('#LOC2').attr('src', fcFolder+'LOC2.png');
 $('#fig1').attr('src', fcFolder+'fig1.png');
