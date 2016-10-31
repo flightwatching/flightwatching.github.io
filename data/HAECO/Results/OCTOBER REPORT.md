@@ -67,15 +67,15 @@ Some alerts triggered only once during the last 30 days and are not considered.
 
 ![Alt text](img/FAV_TRENDS.png?raw=true "WILCO trends on PRE-COOLER teemperature confirming abnormaly low values dissappeared after FAV replacement.")
 
-
-
+#### &#x2705;  &nbsp; ALERT FIXED:</br>
+#### 22-Sep - ENG 2 FAN AIR VALVE REPLACED IAW AMM 36-11-16 PB401 REV JUN 01/16. FUNCTIONAL TEST AS PER PB501- SATIS. ADD CLRD FOR FURTHER REPORT. EGR NOTED TEMP INDN NML RANGE.  ADD 302 cleared.
 
 
 
 
 
 <p>&nbsp; </p>
-## A.ICE VLV FAULTS Maintenance Actions & Results### A.ICE VLV ALERT
+## A.ICE VLV FAULTS Maintenance Actions & Results
 &#x2B55; &nbsp; B-LDB, B-LDD, B-LDF &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &#x1F477;  &nbsp; CONFIRMED BY MAINTENANCE &nbsp; &#x231B; &nbsp; PENDING: Anti-Ice Valve under sourcing</br>
 #### `M481`ANTI ICE VALVE MONITORING may be linked to micro switch issue on valve : the valve may be nearly in CLOSED position although the micro switch 'fully closed' is not set.
 
