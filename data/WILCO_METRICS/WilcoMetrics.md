@@ -7,16 +7,16 @@ ATA Chapters covered by WILCO monitorings</br>
 Number of alerts triggered by WILCO [(see Figure 2)](#fig2)</br>
 Number of monitorings set up</br>
 Number of aircraft monitored</br>
-Number of users registered[(see Figure 3)](#fig2)</br>
+Number of users registered[(see Figure 3)](#fig3)</br>
 
 
 
-[fig2]: img/FLEET_MATRIX.png "Alert metrics provided by WILCO through MATRIX dashboard" 
-![Alt text][fig2] 
+[fig2]: img/FLEET_MATRIX.png "Alert metrics provided by WILCO through MATRIX dashboard"
+![Alt text][fig2]
 Figure 2 -  Example of number of alerts that triggered within a given period of time can be monitored with a MATRIX dashboard that can be configured by FlightWatching team
 
 <p>&nbsp; </p>
-[fig3]: img/USERS_METRICS.png?raw=true "Metrics providing number of users and activiy"
+[fig3]: img/USERS_METRICS.png "Metrics providing number of users and activiy"
 ![Alt text][fig3]
 Figure 3 -  Example of number of users registered and corresponding activity.
 
@@ -33,7 +33,7 @@ MEL rate per ATA chapter</br>
 Number of AOGs per ATA chapter </br>
 Number of NFFs per ATA chapter </br>
 
-![Alt text](img/MIS_METRICS.png?raw=true "Metrics provided by MRO or Airline organisation")
+![Alt text](img/MIS_METRICS.png "Metrics provided by MRO or Airline organisation")
 
 
 <p>&nbsp; </p>
@@ -46,12 +46,12 @@ Memory usage of FlightWatching server [(see Figure 5)](#fig4)</br>
 Disk usage of FlightWatching server [(see Figure 5)](#fig4)</br>
 
 
-[fig4]: img/UPTIME.png?raw=true "Example of Metrics providing uptime performance of cloud server"
+[fig4]: img/UPTIME.png "Example of Metrics providing uptime performance of cloud server"
 ![Alt text][fig4]
 Figure 4 -  Example of Metrics providing uptime performance of cloud server
 
 <p>&nbsp; </p>
-[fig5]: img/SERVER_METRICS.png?raw=true "Example of server metrics providing data on memory and disk usage"
+[fig5]: img/SERVER_METRICS.png "Example of server metrics providing data on memory and disk usage"
 ![Alt text][fig5]
 Figure 5 -  Example of server metrics providing data on memory and disk usage</br>
 <p>&nbsp; </p>
