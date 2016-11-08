@@ -4,20 +4,20 @@ This document provides, for information only, a set of examples of metrics that 
 </br>
 #### Monitoring metrics
 - ATA Chapters covered by WILCO monitorings
-- Number of alerts triggered by WILCO [(see Figure 2)](#fig2)
+- Number of alerts triggered by WILCO (see Figure 2)
 - Number of monitorings set up
 - Number of aircraft monitored
-- Number of users registered[(see Figure 3)](#fig3)
+- Number of users registered(see Figure 3)
 
 
 
 
-<img src="img/FLEET_MATRIX.png" alt ="Alert metrics provided by WILCO through MATRIX dashboard">
+![](img/FLEET_MATRIX.png)
 Figure 2 -  Example of number of alerts that triggered within a given period of time can be monitored with a MATRIX dashboard that can be configured by FlightWatching team
 
 
 
-<img src="img/USERS_METRICS.png" alt ="Metrics providing number of users and activiy">
+![](img/USERS_METRICS.png)
 Figure 3 -  Example of number of users registered and corresponding activity.
 
 
@@ -32,7 +32,7 @@ These metrics are generally provided by FlightWatching licensee (i.e. customer) 
 - Number of AOGs per ATA chapter </br>
 - Number of NFFs per ATA chapter </br>
 
-<img src="img/MIS_METRICS.png" alt ="Metrics provided by MRO or Airline organisation">
+![](img/MIS_METRICS.png)
 
 
 </br>
@@ -45,11 +45,11 @@ These metrics are processed by FlightWatching teams and are generally not publis
 - Disk usage of FlightWatching server (see Figure 5)</br>
 
 
-<img src="img/UPTIME.png" alt ="Example of Metrics providing uptime performance of cloud server">
+![](img/UPTIME.png)
 Figure 4 -  Example of Metrics providing uptime performance of cloud server
 
 
-<img src="img/SERVER_METRICS.png" alt ="Example of server metrics providing data on memory and disk usage">
+![](img/SERVER_METRICS.png)
 Figure 5 -  Example of server metrics providing data on memory and disk usage</br>
 
 
