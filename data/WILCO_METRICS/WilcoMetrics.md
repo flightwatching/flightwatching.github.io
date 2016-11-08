@@ -11,13 +11,13 @@ This document provides, for information only, a set of examples of metrics that 
 
 
 
-[fig2]: ./img/FLEET_MATRIX.png "Alert metrics provided by WILCO through MATRIX dashboard"
-![Alt text][fig2]
+
+<img src="img/FLEET_MATRIX.png" alt ="Alert metrics provided by WILCO through MATRIX dashboard">
 Figure 2 -  Example of number of alerts that triggered within a given period of time can be monitored with a MATRIX dashboard that can be configured by FlightWatching team
 
 
-[fig3]: ./img/USERS_METRICS.png "Metrics providing number of users and activiy"
-![Alt text][fig3]
+
+<img src="img/USERS_METRICS.png" alt ="Metrics providing number of users and activiy">
 Figure 3 -  Example of number of users registered and corresponding activity.
 
 
@@ -32,7 +32,7 @@ These metrics are generally provided by FlightWatching licensee (i.e. customer) 
 - Number of AOGs per ATA chapter </br>
 - Number of NFFs per ATA chapter </br>
 
-![Alt text](./img/MIS_METRICS.png "Metrics provided by MRO or Airline organisation")
+<img src="img/MIS_METRICS.png" alt ="Metrics provided by MRO or Airline organisation">
 
 
 </br>
@@ -40,18 +40,16 @@ These metrics are generally provided by FlightWatching licensee (i.e. customer) 
 These metrics are processed by FlightWatching teams and are generally not published but can be requested on a case by case basis.
 
 
-- Uptime availability of FlightWatching server [(see Figure 4)](#fig4)</br>
-- Memory usage of FlightWatching server [(see Figure 5)](#fig4)</br>
-- Disk usage of FlightWatching server [(see Figure 5)](#fig4)</br>
+- Uptime availability of FlightWatching server (see Figure 4)
+- Memory usage of FlightWatching server (see Figure 5)
+- Disk usage of FlightWatching server (see Figure 5)</br>
 
 
-[fig4]: ./img/UPTIME.png "Example of Metrics providing uptime performance of cloud server"
-![Alt text][fig4]
+<img src="img/UPTIME.png" alt ="Example of Metrics providing uptime performance of cloud server">
 Figure 4 -  Example of Metrics providing uptime performance of cloud server
 
 
-[fig5]: ./img/SERVER_METRICS.png "Example of server metrics providing data on memory and disk usage"
-![Alt text][fig5]
+<img src="img/SERVER_METRICS.png" alt ="Example of server metrics providing data on memory and disk usage">
 Figure 5 -  Example of server metrics providing data on memory and disk usage</br>
 
 
