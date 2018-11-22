@@ -42,3 +42,4 @@ plugins:
 
 collections:
   - staff_members
+  - product_features

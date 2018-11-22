@@ -1,0 +1,12 @@
+
+<div class="section">
+  <h1 class="section-title">OUR PRODUCT : WILCO</h1>
+  <div class="product">
+    {% assign collec = site.product_features | sort: 'rank' %}
+    {% for feat in collec %}
+    <div class="feature-item">
+      <p class="feature-name">{{ feat.name }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
