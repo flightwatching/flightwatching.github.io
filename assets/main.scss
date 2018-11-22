@@ -25,3 +25,8 @@ body {
   text-align: center;
   width: 100%;
 }
+
+.wrapper {
+  max-width: -webkit-calc(100% - (30px * 2));
+  max-width: calc(100% - (30px * 2));  
+}

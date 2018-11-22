@@ -3,9 +3,11 @@
   flex-direction: row;
   align-items: stretch;
   text-align: center;
+  flex-flow: wrap;
 
   .staff-item {
     flex: auto;
+    margin: 3em;
 
     .staff-name {
       font-family: "LetoSans";
