@@ -1,5 +1,10 @@
 ---
-name: depzncepz
-rank: 1
+name: FLEET PREVENTIVE MAINTENANCE
+photo: feature-preventive-maintenance.png
+rank: 2
 ---
-Jane has worked on Jekyll for the past *five years*.
+
+* Reduce Unscheduled workload
+* Confidence Factor assessment
+* Detection of erosion and wear
+* Remaining Useful Life alerts

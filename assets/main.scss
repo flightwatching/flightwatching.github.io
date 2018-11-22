@@ -27,7 +27,14 @@ body {
   width: 100%;
 }
 
-.wrapper {
-  max-width: -webkit-calc(90% - (30px * 2));
-  max-width: calc(90% - (30px * 2));
+.section {
+  padding: 15vh;
+  .wrapper {
+    max-width: -webkit-calc(100% - (30px * 2));
+    max-width: calc(100% - (30px * 2));
+  }
+}
+
+.section-black {
+  background-color: black;
 }
