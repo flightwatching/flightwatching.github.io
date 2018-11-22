@@ -18,3 +18,10 @@ body {
 *{
   font-family: $leto;
 }
+
+.section-title {
+  color:#fff;
+  -webkit-text-stroke:.3px #dada18;
+  text-align: center;
+  width: 100%;
+}

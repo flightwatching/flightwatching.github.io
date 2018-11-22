@@ -563,25 +563,41 @@ table {
 .staff {
   display: flex;
   flex-direction: row;
-  align-items: stretch; }
-  .staff .staff-frame {
-    margin: 0 auto;
-    background: #CCC;
-    width: 171.428px;
-    width: 10.71429rem;
-    height: 171.428px;
-    height: 10.71429rem;
-    border-radius: 100%;
-    border: 3px solid #fff; }
-    .staff .staff-frame .staff-photo {
-      border-radius: 100%;
-      height: 100%;
-      width: 100%; }
+  align-items: stretch;
+  text-align: center; }
   .staff .staff-item {
     flex: auto; }
+    .staff .staff-item .staff-name {
+      font-family: "LetoSans";
+      color: #ccd300;
+      font-weight: 100; }
+    .staff .staff-item .staff-position {
+      color: #c7cbd0;
+      display: block;
+      font-weight: 400;
+      text-decoration: underline; }
+    .staff .staff-item .staff-frame {
+      margin: 0 auto;
+      background: #CCC;
+      width: 171.428px;
+      width: 10.71429rem;
+      height: 171.428px;
+      height: 10.71429rem;
+      border-radius: 100%;
+      border: 3px solid #fff; }
+      .staff .staff-item .staff-frame .staff-photo {
+        border-radius: 100%;
+        height: 100%;
+        width: 100%; }
 
 body {
   background: #1b1e2a; }
 
 * {
   font-family: "LetoSans"; }
+
+.section-title {
+  color: #fff;
+  -webkit-text-stroke: .3px #dada18;
+  text-align: center;
+  width: 100%; }
