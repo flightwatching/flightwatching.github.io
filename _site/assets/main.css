@@ -539,6 +539,7 @@ table {
         height: 10vh; }
 
 .site-footer {
+  background-color: black;
   height: 13vh; }
   .site-footer .footer {
     display: flex;
@@ -558,6 +559,26 @@ table {
         height: 10vh; }
     .site-footer .footer li {
       display: inline; }
+
+.staff {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch; }
+  .staff .staff-frame {
+    margin: 0 auto;
+    background: #CCC;
+    width: 171.428px;
+    width: 10.71429rem;
+    height: 171.428px;
+    height: 10.71429rem;
+    border-radius: 100%;
+    border: 3px solid #fff; }
+    .staff .staff-frame .staff-photo {
+      border-radius: 100%;
+      height: 100%;
+      width: 100%; }
+  .staff .staff-item {
+    flex: auto; }
 
 body {
   background: #1b1e2a; }

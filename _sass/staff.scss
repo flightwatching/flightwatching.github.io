@@ -1,0 +1,26 @@
+
+.staff {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+
+  .staff-frame {
+    margin: 0 auto;
+    background: #CCC;
+    width: 171.428px;
+    width: 10.71429rem;
+    height: 171.428px;
+    height: 10.71429rem;
+    border-radius: 100%;
+    border: 3px solid #fff;
+    .staff-photo{
+        border-radius: 100%;
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  .staff-item {
+    flex: auto;
+  }
+}

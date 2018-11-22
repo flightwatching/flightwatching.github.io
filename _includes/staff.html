@@ -1,0 +1,14 @@
+<div class="section">
+  <h1>OUR TEAM</h1>
+  <div class="staff">
+    {% for staff_member in site.staff_members %}
+    <div class="staff-item">
+      <div class="staff-frame">
+        <img class="staff-photo" src="/assets/images/staff/{{staff_member.photo}}" alt="staff_member.name">
+      </div>
+      <h2>{{ staff_member.name }} - {{ staff_member.position }}</h2>
+      <p>{{ staff_member.content | markdownify }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</div>
