@@ -1,0 +1,20 @@
+
+@font-face {
+  font-family:"LetoSans";
+  src: url("/assets/fonts/LetoSans.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family:"LetoSans";
+  src: url("/assets/fonts/LetoSans-Thin.otf") format("opentype");
+  font-weight: 100;
+}
+
+@font-face {
+  font-family:"LetoSans";
+  src: url("/assets/fonts/LetoSans-Bold.otf") format("opentype");
+  font-weight: 600;
+}
+
+$leto: 'LetoSans';
