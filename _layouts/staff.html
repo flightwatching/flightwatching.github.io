@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="staff">
+        <div class="staff-header">
+
+          <div class="person-frame">
+            <img class="person-photo" src="/assets/images/staff/{{page.photo}}" alt="{{page.name}}">
+          </div>
+          <div class="person-description">
+            <p class="staff-name">{{ page.name }}</p>
+            <p class="staff-position">{{ page.position }}</p>
+          </div>
+        </div>
+        <div class="staff-resume">{{page.content}}</div>
+
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="/assets/demo/demo.js"></script>
+</html>

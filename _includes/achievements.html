@@ -9,7 +9,10 @@
           <img src="/assets/images/achievements/{{achievement.logo}}" alt="">
         </div>
         <div class="achievement-abstract">
-          {{ achievement.content | split:'<!--break-->' | first }}
+          {{ achievement.excerpt }}
+        </div>
+        <div class="">
+          <a href="{{ achievement.url }}">Read more</a>
         </div>
       </div>
       {% endfor %}

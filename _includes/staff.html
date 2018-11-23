@@ -1,6 +1,6 @@
 <div class="section">
   <h1 class="section-title">OUR TEAM</h1>
-  <div class="staff">
+  <div class="staff-thumbnails">
     {% assign sortedStaff = site.staff_members | sort: 'rank' %}
     {% for staff_member in sortedStaff %}
     <div class="staff-item">
@@ -9,6 +9,8 @@
       </div>
       <p class="staff-name">{{ staff_member.name }}</p>
       <p class="staff-position">{{ staff_member.position }}</p>
+      <p class="staff-resume"><a href="{{staff_member.url}}">{{staff_member.summary}}</a></p>
+
     </div>
     {% endfor %}
   </div>

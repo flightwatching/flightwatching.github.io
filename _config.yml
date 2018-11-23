@@ -41,7 +41,9 @@ plugins:
 #   - vendor/ruby/
 
 collections:
-  - staff_members
-  - achievements
-  - product_features
-  - testimonials
+  staff_members:
+    output: true
+  achievements:
+    output: true
+  product_features:
+  testimonials:
