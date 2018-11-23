@@ -632,6 +632,27 @@ table {
       width: 80%;
       margin: 0 auto; }
 
+.pitch {
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  flex-direction: row; }
+  .pitch .sumup {
+    flex: 0.6;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-right: 5vh; }
+  .pitch .photo {
+    flex: 0.4;
+    text-align: right;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column; }
+
 body {
   background: #1b1e2a; }
 
