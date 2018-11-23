@@ -1,0 +1,26 @@
+.achievements {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  overflow: auto;
+  .achievement-item {
+    flex:1;
+    max-width: 25vh;
+    margin-top: 30px;
+    padding: 25px 25px 0 25px;
+    display: flex;
+    flex-flow: column;
+    .achievement-logo{
+      img {
+        height: 5rem;
+        filter: brightness(0%);
+      }
+      padding-bottom: 3rem;
+      border-bottom: 2px solid $black;
+    }
+    .achievement-abstract {
+      padding-top: 1rem;
+      font-size: 0.7rem;
+    }
+   }
+}

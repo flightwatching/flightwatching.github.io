@@ -1,0 +1,18 @@
+<div class="section section-blue">
+  <div class="wrapper">
+    <h1 class="section-title">ACHIEVEMENTS</h1>
+    <div class="achievements">
+      {% assign collec = site.achievements | sort: 'rank' %}
+      {% for achievement in collec %}
+      <div class="achievement-item">
+        <div class="achievement-logo">
+          <img src="/assets/images/achievements/{{achievement.logo}}" alt="">
+        </div>
+        <div class="achievement-abstract">
+          {{ achievement.content | split:'<!--break-->' | first }}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
