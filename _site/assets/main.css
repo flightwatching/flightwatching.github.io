@@ -520,6 +520,8 @@ table {
   font-family: "LetoSans"; }
 
 .site-header {
+  border-top: 0px solid #424242;
+  border-bottom: 0px solid #e8e8e8;
   height: 13vh; }
   .site-header .header {
     display: flex;
@@ -540,7 +542,9 @@ table {
 
 .site-footer {
   background-color: black;
-  height: 13vh; }
+  height: 13vh;
+  border-top: 0px;
+  border-bottom: 0px; }
   .site-footer .footer {
     display: flex;
     flex-direction: row;
@@ -616,7 +620,7 @@ body {
   width: 100%; }
 
 .section {
-  padding: 15vh; }
+  padding: 3vh; }
   .section .wrapper {
     max-width: -webkit-calc(100% - (30px * 2));
     max-width: calc(100% - (30px * 2)); }
