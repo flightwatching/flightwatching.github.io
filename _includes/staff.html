@@ -4,8 +4,8 @@
     {% assign sortedStaff = site.staff_members | sort: 'rank' %}
     {% for staff_member in sortedStaff %}
     <div class="staff-item">
-      <div class="staff-frame">
-        <img class="staff-photo" src="/assets/images/staff/{{staff_member.photo}}" alt="staff_member.name">
+      <div class="person-frame">
+        <img class="person-photo" src="/assets/images/staff/{{staff_member.photo}}" alt="staff_member.name">
       </div>
       <p class="staff-name">{{ staff_member.name }}</p>
       <p class="staff-position">{{ staff_member.position }}</p>

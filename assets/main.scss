@@ -9,6 +9,7 @@
 @import "staff";
 @import "product";
 @import "pitch";
+@import "testimonials";
 @import "achievements";
 
 $base-font-family: $leto, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
@@ -17,7 +18,6 @@ body {
   background: $bg;
 }
 
-
 *{
   font-family: $leto;
 }
@@ -25,6 +25,12 @@ body {
 .section-title {
   color:#fff;
   -webkit-text-stroke:.3px #dada18;
+  text-align: center;
+  width: 100%;
+}
+
+.section-title-dark {
+  color:$black;
   text-align: center;
   width: 100%;
 }
@@ -39,6 +45,9 @@ body {
 
 .section-black {
   background-color: $black;
+}
+.section-white {
+  background-color: $white;
 }
 .section-blue {
   background-color: $blue;

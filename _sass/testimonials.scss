@@ -1,0 +1,73 @@
+.testimonials {
+  display: flex;
+  flex-flow: row nowrap;
+  flex-direction: row;
+  overflow: auto;
+
+  .testimonial-item {
+    flex: 1;
+    margin-top: 30px;
+    padding: 25px 25px 0;
+    display: flex;
+    flex-flow: column;
+
+    .who {
+      text-align: right;
+      font-size: 1.5rem;
+    }
+    .role {
+      text-align: right;
+      color: #e89302
+    }
+    .site{
+      text-align: right;
+      a {
+        color: #333;
+      }
+      a:hover {
+        color: #666;
+      }
+    }
+  }
+}
+
+.testimonial-quote {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0 0.5em;
+  color: $black;
+  background: $grey;
+  /* css3 */
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.testimonial-quote p {}
+/* this isn't necessary, just saves me having to edit the HTML of the demo */
+.testimonial-quote:before {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  width: 155px;
+  height: 36px;
+  /* reduce the damage in FF3.0 */
+  display: block;
+}
+/* creates the triangle */
+.testimonial-quote:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  border: 15px solid transparent;
+  border-bottom-color: $grey;
+  /* reduce the damage in FF3.0 */
+  display: block;
+  width: 0;
+}
+/* display of quote author (alternatively use a class on the element following the blockquote) */
+.testimonial-quote + p {
+  padding-left: 15px;
+  font: 14px Arial, sans-serif;
+}

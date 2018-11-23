@@ -1,0 +1,27 @@
+<div class="section section-white">
+  <div class="wrapper">
+    <h1 class="section-title-dark">TESTIMONIALS</h1>
+    <div class="testimonials">
+      {% assign collec = site.testimonials | sort: 'rank' %}
+      {% for testimonial in collec %}
+      <div class="testimonial-item">
+        <div class="person-frame">
+          <img class="person-photo" src="/assets/images/testimonials/{{testimonial.photo}}" alt="">
+        </div>
+        <div class="who">
+          {{ testimonial.who }}
+        </div>
+        <div class="role">
+          {{ testimonial.role }}
+        </div>
+        <div class="site">
+          <a href="{{ testimonial.www }}">Visit website</a>
+        </div>
+        <blockquote class="testimonial-quote" cite="{{ testimonial.www }}">
+          <p>{{testimonial.content}}</p>
+        </blockquote>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
