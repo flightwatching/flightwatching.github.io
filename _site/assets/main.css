@@ -520,8 +520,8 @@ table {
   font-family: "LetoSans"; }
 
 .site-header {
-  border-top: 0px solid #424242;
-  border-bottom: 0px solid #e8e8e8;
+  border-top: 0px;
+  border-bottom: 0px;
   height: 13vh; }
   .site-header .header {
     display: flex;
@@ -605,7 +605,32 @@ table {
     width: 100%;
     margin-top: 30px;
     padding: 25px 25px 0 25px;
-    background-color: #4fb1b4; }
+    background-color: #4fb1b4;
+    display: flex;
+    flex-flow: row nowrap; }
+    .product .feature-item .feature-name {
+      color: white;
+      flex: 0.6;
+      margin-right: 5vw; }
+      .product .feature-item .feature-name h4 {
+        text-align: left;
+        text-transform: uppercase;
+        font-size: 45.714px;
+        font-size: 2.85714rem;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 20px;
+        font-family: 'knockout';
+        letter-spacing: 5px;
+        font-weight: 400; }
+      .product .feature-item .feature-name li {
+        font-size: 14.2857px;
+        text-align: left;
+        margin-bottom: 25px; }
+    .product .feature-item .feature-photo {
+      flex: 0.4;
+      text-align: right;
+      width: 80%;
+      margin: 0 auto; }
 
 body {
   background: #1b1e2a; }

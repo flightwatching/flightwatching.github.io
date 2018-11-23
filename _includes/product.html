@@ -5,12 +5,14 @@
       {% assign collec = site.product_features | sort: 'rank' %}
       {% for feat in collec %}
       <div class="feature-item">
-        <div class="feature-name">{{ feat.name }}</div>
+        <div class="feature-name">
+          <h4>{{ feat.name }}</h4>
+          <div class="feature-content">
+            {{ feat.content | markdownify }}
+          </div>
+        </div>
         <div class="feature-photo">
           <img src="/assets/images/features/{{feat.photo}}" alt="">
-        </div>
-        <div class="feature-content">
-          {{ feat.content | markdownify }}
         </div>
       </div>
       {% endfor %}
