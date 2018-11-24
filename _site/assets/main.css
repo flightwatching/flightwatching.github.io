@@ -760,7 +760,7 @@ table {
     flex: 1;
     max-width: 25vh;
     margin-top: 30px;
-    padding: 25px 25px 0 25px;
+    padding: 25px 25px 0;
     display: flex;
     flex-flow: column; }
     .achievements .achievement-item .achievement-logo {
@@ -772,6 +772,9 @@ table {
     .achievements .achievement-item .achievement-abstract {
       padding-top: 1rem;
       font-size: 0.7rem; }
+    .achievements .achievement-item .read-more a {
+      color: #121316;
+      text-decoration: underline; }
 
 body {
   background: #1b1e2a; }
