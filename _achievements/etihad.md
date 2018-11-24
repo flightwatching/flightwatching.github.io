@@ -1,7 +1,6 @@
 ---
 layout: achievement
 title: Boeing and Airbus fleet monitoring
-date: 2011-12-31
 logo: etihad.png
 results: etihad-results.png
 illustration: etihad-illustration.png

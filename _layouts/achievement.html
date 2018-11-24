@@ -8,7 +8,21 @@
     {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
-        {{ content }}
+      <div class="achievement">
+        <div class="logo">
+          <img src="/assets/images/achievements/{{page.logo}}" alt="">
+        </div>
+        <div class="results">
+          <img src="/assets/images/achievements/{{page.results}}" alt="">
+        </div>
+        <div class="description">
+          <h1>{{page.title}}</h1>
+          {{ content }}
+        </div>
+        <div class="illustration">
+          <img src="/assets/images/achievements/{{page.illustration}}" alt="">
+        </div>
+      </div>
     </main>
 
     {%- include footer.html -%}

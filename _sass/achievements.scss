@@ -34,3 +34,26 @@
     }
   }
 }
+
+
+
+.achievement {
+  background-image: url("/assets/images/wings_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 1vh 20vw;
+  padding: 3rem;
+  min-height: 20em;
+  opacity: 0.8;
+  background-color: $black;
+  .logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 10rem;
+  }
+  .description {
+    padding: 10rem 2rem;
+    color: $white;
+    font-size: 1.2rem;
+  }
+}

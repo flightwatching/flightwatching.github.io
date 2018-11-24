@@ -566,7 +566,7 @@ table {
 
 .staff {
   display: flex;
-  background-image: url("/assets/images/wings.svg");
+  background-image: url("/assets/images/wings_bg.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
@@ -775,6 +775,24 @@ table {
     .achievements .achievement-item .read-more a {
       color: #121316;
       text-decoration: underline; }
+
+.achievement {
+  background-image: url("/assets/images/wings_bg.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  margin: 1vh 20vw;
+  padding: 3rem;
+  min-height: 20em;
+  opacity: 0.8;
+  background-color: #121316; }
+  .achievement .logo {
+    filter: brightness(0) invert(1);
+    margin-bottom: 10rem; }
+  .achievement .description {
+    padding: 10rem 2rem;
+    color: #FFF;
+    font-size: 1.2rem; }
 
 body {
   background: #1b1e2a; }
