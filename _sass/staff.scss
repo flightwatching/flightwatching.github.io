@@ -4,17 +4,16 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-position: top;
+  flex-direction: column;
   .staff-header {
-    margin: 10vh;
-    display:flex;
-    flex-direction: row;
-    align-items: stretch;
-    text-align: center;
-    flex-flow: wrap;
+    margin: 10vh 10vh 0vh 10vh;
     .person-frame {
+
     }
     .person-description {
-      vertical-align: middle;
+      text-align: left;
+      justify-content: flex-start;
+      vertical-align: bottom;
       .staff-name {
         font-family: "LetoSans";
         color: #ccd300;
@@ -81,9 +80,7 @@
   margin: 0 auto;
   background: #CCC;
   width: 171.428px;
-  width: 10.71429rem;
   height: 171.428px;
-  height: 10.71429rem;
   border-radius: 100%;
   border: 3px solid #fff;
 
