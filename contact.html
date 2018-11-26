@@ -4,8 +4,15 @@
 
 layout: default
 ---
-<form action="https://formspree.io/contact@flightwatching.com" method="POST">
-  <input type="email" name="_replyto" placeholder="Your professional email">
-  <textarea name="content" rows="8" cols="80" placeholder="Describe your request, we will come back to you"></textarea>
-  <input type="submit" value="Send">
-</form>
+<main class="contact-content" aria-label="Content">
+  <h1>Contact us</h1>
+  <div class="contact-form">
+    <form action="https://formspree.io/contact@flightwatching.com" method="POST">
+      <input type="email" name="_replyto" placeholder="Your professional email">
+      <textarea name="content" rows="18" cols="80" placeholder="Describe your request, we will come back to you"></textarea>
+      <input type="submit" value="Send">
+      <input type="hidden" name="_next" value="{{site.url}}" />
+      <input type="hidden" name="_subject" value="New contact message from {{site.url}}" />
+    </form>
+  </div>
+</main>
