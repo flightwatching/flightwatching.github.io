@@ -681,7 +681,7 @@ table {
   flex-direction: row; }
   .pitch .sumup {
     flex: 0.6;
-    color: white;
+    color: #C7CBD0;
     font-size: 1.1rem;
     font-weight: 400;
     text-align: center;
