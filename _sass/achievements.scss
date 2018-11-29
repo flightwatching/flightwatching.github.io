@@ -36,15 +36,14 @@
 }
 
 
-
 .achievement {
   background-image: url("/assets/images/wings_bg.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
-  margin: 1vh 20vw;
-  padding: 3rem;
   min-height: 20em;
+  margin: 1vh auto;
+  max-width: 1204px;
   opacity: 0.8;
   background-color: $black;
   .logo {
