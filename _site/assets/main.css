@@ -811,14 +811,14 @@ table {
 
 input[type=email], textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.8rem;
   border: 1px solid #ccc;
   resize: vertical;
   padding: 12px 20px;
   box-sizing: border-box;
   border: 2px solid #ccc;
   border-radius: 4px;
-  font-size: 16px;
+  font-size: 1rem;
   margin-top: 2rem; }
 
 input[type=email] {
@@ -837,12 +837,12 @@ input[type=submit] {
   color: white;
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 1rem;
   cursor: pointer;
   float: right; }
 
 input[type=submit]:hover {
-  background-color: #4FB1B4;
+  background-color: darkorange;
   color: #121316; }
 
 input[type=submit] {
@@ -863,7 +863,8 @@ input[type=submit] {
   background-color: #C7CBD0;
   padding: 20px;
   display: inline-block;
-  width: 60rem; }
+  width: 60vw;
+  min-width: 300px; }
 
 @media screen and (max-device-width: 520px) {
   body {
