@@ -5,17 +5,21 @@
       {% assign collec = site.testimonials | sort: 'rank' %}
       {% for testimonial in collec %}
       <div class="testimonial-item">
-        <div class="person-frame">
-          <img class="person-photo" src="/assets/images/testimonials/{{testimonial.photo}}" alt="">
-        </div>
-        <div class="who">
-          {{ testimonial.who }}
-        </div>
-        <div class="role">
-          {{ testimonial.role }}
-        </div>
-        <div class="site">
-          <a href="{{ testimonial.www }}">Visit website</a>
+        <div class="person-card">
+          <div class="person-frame">
+            <img class="person-photo" src="/assets/images/testimonials/{{testimonial.photo}}" alt="">
+          </div>
+          <div class="person-id">
+            <div class="who">
+              {{ testimonial.who }}
+            </div>
+            <div class="role">
+              {{ testimonial.role }}
+            </div>
+            <div class="site">
+              <a href="{{ testimonial.www }}">Visit website</a>
+            </div>
+          </div>
         </div>
         <blockquote class="testimonial-quote" cite="{{ testimonial.www }}">
           <p>{{testimonial.content}}</p>

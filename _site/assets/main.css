@@ -626,8 +626,10 @@ table {
       font-weight: 400;
       text-decoration: underline; }
 
+.person-frame-center {
+  margin: 0 auto; }
+
 .person-frame {
-  margin: 0 auto;
   background: #CCC;
   width: 171.428px;
   height: 171.428px;
@@ -644,51 +646,52 @@ table {
   flex-flow: row nowrap;
   flex-direction: column; }
   .product .feature-item {
-    width: 100%;
-    margin-top: 30px;
-    padding: 25px 25px 0 25px;
+    width: calc(100%-4vw);
+    margin: 5vh 2vw 5vh 2vw;
+    padding: 25px 25px 0px 25px;
     background-color: #4FB1B4;
     display: flex;
-    flex-flow: row nowrap; }
+    flex-flow: row wrap; }
     .product .feature-item .feature-name {
       color: white;
       flex: 0.6;
-      margin-right: 5vw; }
+      margin-right: 5vw;
+      min-width: 200px; }
       .product .feature-item .feature-name h4 {
         text-align: left;
         text-transform: uppercase;
-        font-size: 45.714px;
-        font-size: 2.85714rem;
+        font-size: 2rem;
         border-bottom: 1px solid #fff;
         padding-bottom: 20px;
         font-family: 'knockout';
-        letter-spacing: 5px;
-        font-weight: 400; }
+        letter-spacing: 5px; }
       .product .feature-item .feature-name li {
-        font-size: 14.2857px;
+        font-size: 1rem;
         text-align: left;
-        margin-bottom: 25px; }
+        margin-bottom: 1rem; }
     .product .feature-item .feature-photo {
       flex: 0.4;
       text-align: right;
       width: 80%;
+      min-width: 200px;
       margin: 0 auto; }
 
 .pitch {
   display: flex;
-  -ms-flex-flow: row nowrap;
-  flex-flow: row nowrap;
-  flex-direction: row; }
+  flex-direction: row;
+  flex-flow: row wrap; }
   .pitch .sumup {
     flex: 0.6;
     color: #C7CBD0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 400;
     text-align: center;
-    margin-right: 5vh; }
+    margin-right: 5vh;
+    min-width: 300px; }
   .pitch .photo {
     flex: 0.4;
     text-align: right;
+    min-width: 300px;
     width: 80%;
     margin: 0 auto;
     display: flex;
@@ -697,29 +700,32 @@ table {
 
 .testimonials {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   flex-direction: row;
   overflow: auto; }
   .testimonials .testimonial-item {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 2vh;
     padding: 25px 25px 0;
     display: flex;
     flex-flow: column; }
-    .testimonials .testimonial-item .who {
-      text-align: right;
-      font-size: 1.5rem; }
-    .testimonials .testimonial-item .role {
-      text-align: right;
-      color: #e89302; }
-    .testimonials .testimonial-item .site {
-      text-align: right; }
-      .testimonials .testimonial-item .site a {
-        color: #333; }
-      .testimonials .testimonial-item .site a:hover {
-        color: #666; }
+    .testimonials .testimonial-item .person-card {
+      display: flex; }
+      .testimonials .testimonial-item .person-card .person-id .who {
+        text-align: left;
+        font-size: 1.5rem; }
+      .testimonials .testimonial-item .person-card .person-id .role {
+        text-align: left;
+        color: #e89302; }
+      .testimonials .testimonial-item .person-card .person-id .site {
+        text-align: left; }
+        .testimonials .testimonial-item .person-card .person-id .site a {
+          color: #333; }
+        .testimonials .testimonial-item .person-card .person-id .site a:hover {
+          color: #666; }
 
 .testimonial-quote {
+  width: 100%;
   position: relative;
   padding: 15px;
   margin: 10px 0 0.5em;
@@ -745,7 +751,7 @@ table {
   content: "";
   position: absolute;
   top: -30px;
-  right: 50px;
+  left: 70px;
   border: 15px solid transparent;
   border-bottom-color: #C7CBD0;
   /* reduce the damage in FF3.0 */
@@ -754,23 +760,23 @@ table {
 
 /* display of quote author (alternatively use a class on the element following the blockquote) */
 .testimonial-quote + p {
-  padding-left: 15px;
-  font: 14px Arial, sans-serif; }
+  padding-left: 1rem;
+  font: 1rem Arial, sans-serif; }
 
 .achievements {
   display: flex;
-  flex-flow: row nowrap;
   flex-direction: row;
+  flex-flow: row wrap;
   overflow: auto; }
   .achievements .achievement-item {
     flex: 1;
     max-width: 25vh;
+    min-width: 150px;
     margin-top: 30px;
     padding: 25px 25px 0;
     display: flex;
     flex-flow: column; }
     .achievements .achievement-item .achievement-logo {
-      padding-bottom: 3rem;
       border-bottom: 2px solid #121316; }
       .achievements .achievement-item .achievement-logo img {
         height: 5rem;
@@ -859,6 +865,12 @@ input[type=submit] {
   display: inline-block;
   width: 60rem; }
 
+@media screen and (max-device-width: 520px) {
+  body {
+    font: 10px; } }
+@media screen and (max-device-width: 1204px) {
+  body {
+    font: 14px; } }
 body {
   background: #1b1e2a; }
 
@@ -885,8 +897,7 @@ a:visited {
 .section {
   padding: 3vh; }
   .section .wrapper {
-    max-width: -webkit-calc(100% - (30px * 2));
-    max-width: calc(100% - (30px * 2)); }
+    max-width: calc(100% - (0.5rem * 2)); }
 
 .section-black {
   background-color: #121316; }

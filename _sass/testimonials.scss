@@ -1,37 +1,45 @@
 .testimonials {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   flex-direction: row;
   overflow: auto;
 
   .testimonial-item {
     flex: 1;
-    margin-top: 30px;
+    margin-top: 2vh;
     padding: 25px 25px 0;
     display: flex;
     flex-flow: column;
 
-    .who {
-      text-align: right;
-      font-size: 1.5rem;
-    }
-    .role {
-      text-align: right;
-      color: #e89302
-    }
-    .site{
-      text-align: right;
-      a {
-        color: #333;
+    .person-card {
+      display: flex;
+      .person-frame {
       }
-      a:hover {
-        color: #666;
+      .person-id {
+        .who {
+          text-align: left;
+          font-size: 1.5rem;
+        }
+        .role {
+          text-align: left;
+          color: #e89302
+        }
+        .site{
+          text-align: left;
+          a {
+            color: #333;
+          }
+          a:hover {
+            color: #666;
+          }
+        }
       }
     }
   }
 }
 
 .testimonial-quote {
+  width: 100%;
   position: relative;
   padding: 15px;
   margin: 10px 0 0.5em;
@@ -59,7 +67,7 @@
   content: "";
   position: absolute;
   top: -30px;
-  right: 50px;
+  left: 70px;
   border: 15px solid transparent;
   border-bottom-color: $grey;
   /* reduce the damage in FF3.0 */
@@ -68,6 +76,6 @@
 }
 /* display of quote author (alternatively use a class on the element following the blockquote) */
 .testimonial-quote + p {
-  padding-left: 15px;
-  font: 14px Arial, sans-serif;
+  padding-left: 1rem;
+  font: 1rem Arial, sans-serif;
 }
